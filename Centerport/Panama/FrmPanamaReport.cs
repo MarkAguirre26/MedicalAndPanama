@@ -20,6 +20,7 @@ namespace MedicalManagementSoftware.Report
         public Page2Model page2Model;
         public Page3Model page3Model;
         public Page4Model page4Model;
+        public Page5Model page5Model;
 
 
 
@@ -675,7 +676,7 @@ namespace MedicalManagementSoftware.Report
                 page4.SetParameterValue("NormalLeftEye", page4Model.NormalLeftEye);
                 page4.SetParameterValue("DefectiveLeftEye", page4Model.DefectiveLeftEye);
                 page4.SetParameterValue("ColorVision", page4Model.ColorVision);
-                page4.SetParameterValue("Ishihara", page4Model.Ishihara);
+                page4.SetParameterValue("Ishihara", page4Model.Ishihara.ToUpper());
 
 
 
@@ -688,19 +689,62 @@ namespace MedicalManagementSoftware.Report
             }
             else if (pageIndex == 5)
             {
-                //PanamaPage5 page5 = new PanamaPage5();
-                //Viewer1.ReportSource = page5;
-                //btn_page1.BackColor = SystemColors.Control;
-                //btn_page2.BackColor = SystemColors.Control;
-                //btn_page3.BackColor = SystemColors.Control;
-                //btn_page4.BackColor = SystemColors.Control;
-                //btn_page5.BackColor = SystemColors.ActiveCaption;
-                //btn_page6.BackColor = SystemColors.Control;
-                //btn_page7.BackColor = SystemColors.Control;
-                //btn_page8.BackColor = SystemColors.Control;
+                PanamaPage5 page5 = new PanamaPage5();
+                Viewer1.ReportSource = page5;
+                btn_page1.BackColor = SystemColors.Control;
+                btn_page2.BackColor = SystemColors.Control;
+                btn_page3.BackColor = SystemColors.Control;
+                btn_page4.BackColor = SystemColors.Control;
+                btn_page5.BackColor = SystemColors.ActiveCaption;
+                btn_page6.BackColor = SystemColors.Control;
+                btn_page7.BackColor = SystemColors.Control;
+                btn_page8.BackColor = SystemColors.Control;
+
+                page5.SetParameterValue("_500HzRightEar", page5Model._500HzRightEar);
+                page5.SetParameterValue("_500HzLeftEar", page5Model._500HzLeftEar);
+                page5.SetParameterValue("_1kRightEar", page5Model._1kRightEar);
+                page5.SetParameterValue("_1kLeftEar", page5Model._1kLeftEar);
+                page5.SetParameterValue("_2kRightEar", page5Model._2kRightEar);
+                page5.SetParameterValue("_2kLeftEar", page5Model._2kLeftEar);
+                page5.SetParameterValue("_3kRightEar", page5Model._3kRightEar);
+                page5.SetParameterValue("_3kLeftEar", page5Model._3kLeftEar);
+                page5.SetParameterValue("HeadYes", page5Model.HeadYes);
+                page5.SetParameterValue("MouthYes", page5Model.MouthYes);
+                page5.SetParameterValue("Dental", page5Model.Dental);
+                page5.SetParameterValue("Ears", page5Model.Ears);
+                page5.SetParameterValue("Tympanic", page5Model.Tympanic);
+                page5.SetParameterValue("Eyes", page5Model.Eyes);
+                page5.SetParameterValue("Pupils", page5Model.Pupils);
+                page5.SetParameterValue("OfThalmoscopy", page5Model.OfThalmoscopy);
+                page5.SetParameterValue("EyeMovement", page5Model.EyeMovement);
+                page5.SetParameterValue("Lungs", page5Model.Lungs);
+                page5.SetParameterValue("Breast", page5Model.Breast);
+                page5.SetParameterValue("Heart", page5Model.Heart);
+                page5.SetParameterValue("Skin", page5Model.Skin);
+                page5.SetParameterValue("VaricoseVenis", page5Model.VaricoseVenis);
+                page5.SetParameterValue("Vascular", page5Model.Vascular);
+                page5.SetParameterValue("Abnomen", page5Model.Abnomen);
+                page5.SetParameterValue("Hernias", page5Model.Hernias);
+                page5.SetParameterValue("Anus", page5Model.Anus);
+                page5.SetParameterValue("Gu", page5Model.Gu);
+                page5.SetParameterValue("Upper", page5Model.Upper);
+                page5.SetParameterValue("Spine", page5Model.Spine);
+                page5.SetParameterValue("Neurologic", page5Model.Neurologic);
+                page5.SetParameterValue("Psychiatric", page5Model.Psychiatric);
+                page5.SetParameterValue("GeneralAppearance", page5Model.GeneralAppearance);
+                page5.SetParameterValue("PhysicalExploration1", page5Model.PhysicalExploration1);
+                page5.SetParameterValue("PhysicalExploration2", page5Model.PhysicalExploration2);
+                page5.SetParameterValue("PhysicalExploration3", page5Model.PhysicalExploration3);
+                page5.SetParameterValue("PhysicalExploration4", page5Model.PhysicalExploration4);
+                page5.SetParameterValue("Hemogram", page5Model.Hemogram);
+                page5.SetParameterValue("HemogramNormal", page5Model.HemogramNormal);
+                page5.SetParameterValue("HemogramAbNormal", page5Model.HemogramAbNormal);
+                page5.SetParameterValue("HemogramOservation", page5Model.HemogramOservation);
+
+
 
                 //page5.SetDataSource(data);
-                //Viewer1.ReportSource = page5;
+                Viewer1.ReportSource = page5;
 
 
 

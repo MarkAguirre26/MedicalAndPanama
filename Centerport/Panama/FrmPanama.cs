@@ -145,6 +145,7 @@ namespace MedicalManagementSoftware
             print.page2Model = prepareThePage2();
             print.page3Model = prepareThePage3();
             print.page4Model = prepareThePage4();
+            print.page5Model = prepareThePage5();
             print.ShowDialog();
 
         }
@@ -412,6 +413,61 @@ namespace MedicalManagementSoftware
 
             return model;
         }
+
+
+        private Page5Model prepareThePage5()
+        {
+            Page5Model model = new Page5Model();
+            model._500HzRightEar = txt500HzRightEar.Text;
+            model._500HzLeftEar = txt500HzLeftEar.Text;
+            model._1kRightEar = txt1kRightEar.Text;
+            model._1kLeftEar = txt1kLeftEar.Text;
+            model._2kRightEar = txt2kRightEar.Text;
+            model._2kLeftEar = txt2kLeftEar.Text;
+            model._3kRightEar = txt3kRightEar.Text;
+            model._3kLeftEar = txt3kLeftEar.Text;
+            model.HeadYes = getCheckBoxValue(cbHeadYes);
+            model.MouthYes = getCheckBoxValue(cbMouthYes);
+            model.Dental = getCheckBoxValue(cbDental);
+            model.Ears = getCheckBoxValue(cbEars);
+            model.Tympanic = getCheckBoxValue(cbTympanic);
+            model.Eyes = getCheckBoxValue(cbEyes);
+            model.Pupils = getCheckBoxValue(cbPupils);
+            model.OfThalmoscopy = getCheckBoxValue(cbOfThalmoscopy);
+            model.EyeMovement = getCheckBoxValue(cbEyeMovement);
+            model.Lungs = getCheckBoxValue(cbLungs);
+            model.Breast = getCheckBoxValue(cbBreast);
+            model.Heart = getCheckBoxValue(cbHeart);
+            model.Skin = getCheckBoxValue(cbSkin); 
+            model.VaricoseVenis = getCheckBoxValue(cbVaricoseVenis);
+            model.Vascular = getCheckBoxValue(cbVascular);
+            model.Abnomen = getCheckBoxValue(cbAbnomen);
+            model.Hernias = getCheckBoxValue(cbHernias);
+            model.Anus = getCheckBoxValue(cbAnus);
+            model.Gu = getCheckBoxValue(cbGu);
+            model.Upper = getCheckBoxValue(cbUpper);
+            model.Spine = getCheckBoxValue(cbSpine);
+            model.Neurologic = getCheckBoxValue(cbNeurologic);
+            model.Psychiatric = getCheckBoxValue(cbPsychiatric);
+            model.GeneralAppearance = getCheckBoxValue(cbGeneralAppearance);
+
+            model.PhysicalExploration1 = txtPhysicalExploration1.Text;
+            model.PhysicalExploration2 = txtPhysicalExploration2.Text;
+            model.PhysicalExploration3 = txtPhysicalExploration3.Text;
+            model.PhysicalExploration4 = txtPhysicalExploration4.Text;
+            model.Hemogram = "";
+            if (cbHemogram.Checked)
+            {
+                model.Hemogram = "Yes";
+            }
+
+            model.HemogramNormal = txtHemogramNormal.Text;
+            model.HemogramAbNormal = txtHemogramAbNormal.Text;
+            model.HemogramOservation = txtHemogramOservation.Text;
+
+            return model;
+        }
+
 
 
 

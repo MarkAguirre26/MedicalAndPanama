@@ -308,6 +308,7 @@
     <Compile Include="Panama\Page2Model.cs" />
     <Compile Include="Panama\Page3Model.cs" />
     <Compile Include="Panama\Page4Model.cs" />
+    <Compile Include="Panama\Page5Model.cs" />
     <Compile Include="RDLC\frm_LabPrintChoices.cs">
       <SubType>Form</SubType>
     </Compile>
