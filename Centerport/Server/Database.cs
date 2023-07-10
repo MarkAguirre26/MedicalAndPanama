@@ -37,7 +37,7 @@ public class Database
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine("Connection Error", ex.Message);
                 return false;
             }
         }

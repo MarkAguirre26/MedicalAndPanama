@@ -354,7 +354,7 @@ namespace MedicalManagementSoftware.Report
             FormNo.Text = ini.IniReadValue("FORM", "Lab_Urinalysis");
             RevNo.Text = ini.IniReadValue("REVISION", "Lab_Urinalysis");
 
-
+            
             //Urine_sub1.Refresh();
             crystalReportViewer5.RefreshReport();
             RemoveTab(crystalReportViewer5);

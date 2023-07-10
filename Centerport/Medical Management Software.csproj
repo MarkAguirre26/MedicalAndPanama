@@ -214,10 +214,10 @@
     <Compile Include="Dataset\ds_report1.cs">
       <DependentUpon>ds_report1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FrmSearchPanama.cs">
+    <Compile Include="Panama\FrmSearchPanama.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSearchPanama.Designer.cs">
+    <Compile Include="Panama\FrmSearchPanama.Designer.cs">
       <DependentUpon>FrmSearchPanama.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Immunology.cs">
@@ -226,10 +226,10 @@
     <Compile Include="Frm_Immunology.Designer.cs">
       <DependentUpon>Frm_Immunology.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPanama.cs">
+    <Compile Include="Panama\FrmPanama.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPanama.Designer.cs">
+    <Compile Include="Panama\FrmPanama.Designer.cs">
       <DependentUpon>FrmPanama.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\DataClasses1.designer.cs">
@@ -299,11 +299,13 @@
     <Compile Include="Model\Panama_SeaMLC.cs" />
     <Compile Include="Model\PatientList.cs" />
     <Compile Include="Model\Patients_Model.cs" />
-    <Compile Include="Panama\DataSetPanama.Designer.cs">
+    <Compile Include="Panama\DataSetPage1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataSetPanama.xsd</DependentUpon>
+      <DependentUpon>DataSetPage1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Panama\Page1Model.cs" />
+    <Compile Include="Panama\Page2Model.cs" />
     <Compile Include="RDLC\frm_LabPrintChoices.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -573,10 +575,10 @@
       <DependentUpon>Chem_sub.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report\FrmPanamaReport.cs">
+    <Compile Include="Panama\FrmPanamaReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Report\FrmPanamaReport.Designer.cs">
+    <Compile Include="Panama\FrmPanamaReport.Designer.cs">
       <DependentUpon>FrmPanamaReport.cs</DependentUpon>
     </Compile>
     <Compile Include="Report\frm_lab_33_Report.cs">
@@ -660,49 +662,49 @@
       <DependentUpon>08.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report\PanamaPage1.cs">
+    <Compile Include="Panama\PanamaPage1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PanamaPage1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report\PanamaPage2.cs">
+    <Compile Include="Panama\PanamaPage2.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PanamaPage2.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report\PanamaPage3.cs">
+    <Compile Include="Panama\PanamaPage3.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PanamaPage3.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report\PanamaPage4.cs">
+    <Compile Include="Panama\PanamaPage4.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PanamaPage4.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report\PanamaPage5.cs">
+    <Compile Include="Panama\PanamaPage5.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PanamaPage5.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report\PanamaPage6.cs">
+    <Compile Include="Panama\PanamaPage6.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PanamaPage6.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report\PanamaPage7.cs">
+    <Compile Include="Panama\PanamaPage7.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PanamaPage7.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Report\PanamaPage8.cs">
+    <Compile Include="Panama\PanamaPage8.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PanamaPage8.rpt</DependentUpon>
@@ -924,7 +926,7 @@
     <EmbeddedResource Include="CustomControl\PanamaView.resx">
       <DependentUpon>PanamaView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSearchPanama.resx">
+    <EmbeddedResource Include="Panama\FrmSearchPanama.resx">
       <DependentUpon>FrmSearchPanama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Immunology.resx">
@@ -963,7 +965,7 @@
     <EmbeddedResource Include="frm_krpan.resx">
       <DependentUpon>frm_krpan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPanama.resx">
+    <EmbeddedResource Include="Panama\FrmPanama.resx">
       <DependentUpon>FrmPanama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RDLC\frm_LabPrintChoices.resx">
@@ -1116,7 +1118,7 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Chem_sub.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\FrmPanamaReport.resx">
+    <EmbeddedResource Include="Panama\FrmPanamaReport.resx">
       <DependentUpon>FrmPanamaReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\frm_lab_33_Report.resx">
@@ -1176,35 +1178,35 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>08.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\PanamaPage1.rpt">
+    <EmbeddedResource Include="Panama\PanamaPage1.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PanamaPage1.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\PanamaPage2.rpt">
+    <EmbeddedResource Include="Panama\PanamaPage2.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PanamaPage2.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\PanamaPage3.rpt">
+    <EmbeddedResource Include="Panama\PanamaPage3.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PanamaPage3.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\PanamaPage4.rpt">
+    <EmbeddedResource Include="Panama\PanamaPage4.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PanamaPage4.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\PanamaPage5.rpt">
+    <EmbeddedResource Include="Panama\PanamaPage5.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PanamaPage5.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\PanamaPage6.rpt">
+    <EmbeddedResource Include="Panama\PanamaPage6.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PanamaPage6.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\PanamaPage7.rpt">
+    <EmbeddedResource Include="Panama\PanamaPage7.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PanamaPage7.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\PanamaPage8.rpt">
+    <EmbeddedResource Include="Panama\PanamaPage8.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PanamaPage8.cs</LastGenOutput>
     </EmbeddedResource>
@@ -1383,16 +1385,16 @@
       <DependentUpon>DataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <None Include="Panama\DataSetPanama.xsc">
-      <DependentUpon>DataSetPanama.xsd</DependentUpon>
+    <None Include="Panama\DataSetPage1.xsc">
+      <DependentUpon>DataSetPage1.xsd</DependentUpon>
     </None>
-    <None Include="Panama\DataSetPanama.xsd">
+    <None Include="Panama\DataSetPage1.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSetPanama.Designer.cs</LastGenOutput>
+      <LastGenOutput>DataSetPage1.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Panama\DataSetPanama.xss">
-      <DependentUpon>DataSetPanama.xsd</DependentUpon>
+    <None Include="Panama\DataSetPage1.xss">
+      <DependentUpon>DataSetPage1.xsd</DependentUpon>
     </None>
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
