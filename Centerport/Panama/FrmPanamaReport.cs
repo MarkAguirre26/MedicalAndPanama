@@ -549,10 +549,18 @@ namespace MedicalManagementSoftware.Report
 
 
 
-
+                page2.SetParameterValue("Epilipsy", page2Model.Epilipsy);
+                page2.SetParameterValue("SickleCell", page2Model.SickleCell);
+                page2.SetParameterValue("Herinas", page2Model.Herinas);
+                page2.SetParameterValue("GenitalDisorders", page2Model.GenitalDisorders);
+                page2.SetParameterValue("Sleepproblem", page2Model.Sleepproblem);
+                page2.SetParameterValue("BackJointProblem", page2Model.BackJointProblem);
                 page2.SetParameterValue("Amputation", page2Model.Amputation);
                 page2.SetParameterValue("FracturesDislocation", page2Model.FracturesDislocation);
                 page2.SetParameterValue("Covid19", page2Model.Covid19);
+
+
+
                 page2.SetParameterValue("Repatriated", page2Model.Repatriated);
                 page2.SetParameterValue("Hospitalized", page2Model.Hospitalized);
                 page2.SetParameterValue("SeaDuty", page2Model.SeaDuty);
@@ -561,23 +569,20 @@ namespace MedicalManagementSoftware.Report
                 page2.SetParameterValue("FitToPerformDuries", page2Model.FitToPerformDuries);
                 page2.SetParameterValue("AllergicToAnyMedication", page2Model.AllergicToAnyMedication);
                 page2.SetParameterValue("AlternativeSupliment", page2Model.AlternativeSupliment);
-                page2.SetParameterValue("AlternativeSuplimentComment1", page2Model.AlternativeSuplimentComment1);
+                
                 page2.SetParameterValue("Comment1", page2Model.Comment1);
                 page2.SetParameterValue("Comment2", page2Model.Comment2);
                 page2.SetParameterValue("Comment3", page2Model.Comment3);
                 page2.SetParameterValue("Comment4", page2Model.Comment4);
                 page2.SetParameterValue("Comment5", page2Model.Comment5);
+                page2.SetParameterValue("Pregnancy", page2Model.Pregnancy);
+                page2.SetParameterValue("AlternativeSuplimentComment1", page2Model.AlternativeSuplimentComment1);
                 page2.SetParameterValue("AlternativeSuplimentComment2", page2Model.AlternativeSuplimentComment2);
                 page2.SetParameterValue("AlternativeSuplimentComment3", page2Model.AlternativeSuplimentComment3);
                 page2.SetParameterValue("AlternativeSuplimentComment4", page2Model.AlternativeSuplimentComment4);
-                page2.SetParameterValue("AlternativeSuplimentComment5", page2Model.AlternativeSuplimentComment5);
-                page2.SetParameterValue("AlternativeSuplimentComment6", page2Model.AlternativeSuplimentComment6);
-                page2.SetParameterValue("Epilipsy", page2Model.Epilipsy);
-                page2.SetParameterValue("SickleCell", page2Model.SickleCell);
-                page2.SetParameterValue("Herinas", page2Model.Herinas);
-                page2.SetParameterValue("GenitalDisorders", page2Model.GenitalDisorders);
-                page2.SetParameterValue("Sleepproblem", page2Model.Sleepproblem);
-                page2.SetParameterValue("BackJointProblem", page2Model.BackJointProblem);
+                page2.SetParameterValue("AlternativeSuplimentComment5", page2Model.AlternativeSuplimentComment5);              
+                
+              
 
                 //page2.SetDataSource(data);
                 Viewer1.ReportSource = page2;

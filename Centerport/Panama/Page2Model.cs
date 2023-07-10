@@ -39,7 +39,7 @@ namespace MedicalManagementSoftware.Panama
         public string AlternativeSuplimentComment3 { get; set; }
         public string AlternativeSuplimentComment4 { get; set; }
         public string AlternativeSuplimentComment5 { get; set; }
-        public string AlternativeSuplimentComment6 { get; set; }
+
 
 
 

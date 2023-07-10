@@ -250,7 +250,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_AlternativeSuplimentComment6 {
+        public CrystalDecisions.Shared.IParameterField Parameter_Epilipsy {
             get {
                 return this.DataDefinition.ParameterFields[20];
             }
@@ -258,7 +258,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Epilipsy {
+        public CrystalDecisions.Shared.IParameterField Parameter_SickleCell {
             get {
                 return this.DataDefinition.ParameterFields[21];
             }
@@ -266,7 +266,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_SickleCell {
+        public CrystalDecisions.Shared.IParameterField Parameter_Herinas {
             get {
                 return this.DataDefinition.ParameterFields[22];
             }
@@ -274,7 +274,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Herinas {
+        public CrystalDecisions.Shared.IParameterField Parameter_GenitalDisorders {
             get {
                 return this.DataDefinition.ParameterFields[23];
             }
@@ -282,7 +282,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_GenitalDisorders {
+        public CrystalDecisions.Shared.IParameterField Parameter_Pregnancy {
             get {
                 return this.DataDefinition.ParameterFields[24];
             }
@@ -290,7 +290,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Pregnancy {
+        public CrystalDecisions.Shared.IParameterField Parameter_Sleepproblem {
             get {
                 return this.DataDefinition.ParameterFields[25];
             }
@@ -298,7 +298,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Sleepproblem {
+        public CrystalDecisions.Shared.IParameterField Parameter_BackJointProblem {
             get {
                 return this.DataDefinition.ParameterFields[26];
             }
@@ -306,7 +306,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_BackJointProblem {
+        public CrystalDecisions.Shared.IParameterField Parameter_AlternativeSuplimentComment5 {
             get {
                 return this.DataDefinition.ParameterFields[27];
             }

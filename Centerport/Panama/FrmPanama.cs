@@ -260,7 +260,10 @@ namespace MedicalManagementSoftware
             model.BackJointProblem = getCheckBoxValue(cbBackJointProblemYes);
             model.Amputation = getCheckBoxValue(cbAmputationYes);
             model.FracturesDislocation = getCheckBoxValue(cbFracturesDislocationYes);
+
+
             model.Covid19 = getCheckBoxValue(cbCovidYes);
+
             model.Repatriated = getCheckBoxValue(cbRepatriatedYes);
             model.Hospitalized = getCheckBoxValue(cbHospitalizedYes);
             model.SeaDuty = getCheckBoxValue(cbSeaDutyYes);
@@ -268,13 +271,13 @@ namespace MedicalManagementSoftware
             model.ConsiderDisease = getCheckBoxValue(cbConsiderDiseaseYes);
             model.FitToPerformDuries = getCheckBoxValue(cbFitToPerformDuriesYes);
             model.AllergicToAnyMedication = getCheckBoxValue(cbAllergicToAnyMedicationYes);
-            model.AllergicAlter = getCheckBoxValue(cbAllergicAlternativeSuplimentYes);
+            model.AlternativeSupliment = getCheckBoxValue(cbAllergicAlternativeSuplimentYes);
             model.AlternativeSuplimentComment1 = txtAlternativeComment1.Text;
             model.AlternativeSuplimentComment2 = txtAlternativeComment2.Text;
             model.AlternativeSuplimentComment3 = txtAlternativeComment3.Text;
             model.AlternativeSuplimentComment4 = txtAlternativeComment4.Text;
             model.AlternativeSuplimentComment5 = txtAlternativeComment5.Text;
-            model.AlternativeSuplimentComment6 = txtAlternativeComment6.Text;           
+            model.Pregnancy = getCheckBoxValue(cbPregnancyYes);
             model.Comment1 = txtExamineeComment1.Text;
             model.Comment2 = txtExamineeComment2.Text;
             model.Comment3 = txtExamineeComment3.Text;
