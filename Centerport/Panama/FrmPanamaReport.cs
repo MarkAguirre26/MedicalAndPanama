@@ -22,7 +22,7 @@ namespace MedicalManagementSoftware.Report
 
 
 
-        
+
         int pageIndex = 1;
         public string physicianName, NameOfWitness1;
         string Bdate, BMonth, BYear, expirationDay, expirationMonth, expirationYear, issuedDay, issuedMonth, issuedYear;
@@ -485,14 +485,11 @@ namespace MedicalManagementSoftware.Report
 
 
 
-
-
                 page1.SetParameterValue("Fullname", page1Model.Fullname);
                 page1.SetParameterValue("HomeAddress", page1Model.HomeAddress);
                 page1.SetParameterValue("Department", page1Model.Department);
                 page1.SetParameterValue("position", page1Model.Position);
                 page1.SetParameterValue("gender", page1Model.Gender);
-                page1.SetParameterValue("birthdate", page1Model.Birthdate);
                 page1.SetParameterValue("PassportSeamanBookNo", page1Model.PassportSeamanBookNo);
                 page1.SetParameterValue("RhTyping", page1Model.RhTyping);
                 page1.SetParameterValue("LookOutDuties", page1Model.LookOutDuties);
@@ -515,12 +512,7 @@ namespace MedicalManagementSoftware.Report
                 page1.SetParameterValue("KidneyDisorders", page1Model.KidneyDisorders);
                 page1.SetParameterValue("SkinProblem", page1Model.SkinProblem);
                 page1.SetParameterValue("Allergies", page1Model.Allergies);
-                page1.SetParameterValue("Epilipsy", page1Model.Epilipsy);
-                page1.SetParameterValue("SickleCell", page1Model.SickleCell);
-                page1.SetParameterValue("Herinas", page1Model.Herinas);
-                page1.SetParameterValue("GenitalDisorders", page1Model.GenitalDisorders);
-                page1.SetParameterValue("Pregnancy", page1Model.Pregnancy);
-                page1.SetParameterValue("Sleepproblem", page1Model.Sleepproblem);
+
                 page1.SetParameterValue("DoyouSmoke", page1Model.DoyouSmoke);
                 page1.SetParameterValue("Surgeries", page1Model.Surgeries);
                 page1.SetParameterValue("Infectious", page1Model.Infectious);
@@ -534,7 +526,7 @@ namespace MedicalManagementSoftware.Report
                 page1.SetParameterValue("SevereHeadAches", page1Model.SevereHeadAches);
                 page1.SetParameterValue("Vasculardisease", page1Model.Vasculardisease);
                 page1.SetParameterValue("RestrictedMobility", page1Model.RestrictedMobility);
-                page1.SetParameterValue("BackJointProblem", page1Model.BackJointProblem);
+
 
                 Viewer1.ReportSource = page1;
 
@@ -544,19 +536,51 @@ namespace MedicalManagementSoftware.Report
             else if (pageIndex == 2)
             {
 
-                //PanamaPage2 page2 = new PanamaPage2();
-                //Viewer1.ReportSource = page2;
-                //btn_page1.BackColor = SystemColors.Control;
-                //btn_page2.BackColor = SystemColors.ActiveCaption;
-                //btn_page3.BackColor = SystemColors.Control;
-                //btn_page4.BackColor = SystemColors.Control;
-                //btn_page5.BackColor = SystemColors.Control;
-                //btn_page6.BackColor = SystemColors.Control;
-                //btn_page7.BackColor = SystemColors.Control;
-                //btn_page8.BackColor = SystemColors.Control;
+                PanamaPage2 page2 = new PanamaPage2();
+                Viewer1.ReportSource = page2;
+                btn_page1.BackColor = SystemColors.Control;
+                btn_page2.BackColor = SystemColors.ActiveCaption;
+                btn_page3.BackColor = SystemColors.Control;
+                btn_page4.BackColor = SystemColors.Control;
+                btn_page5.BackColor = SystemColors.Control;
+                btn_page6.BackColor = SystemColors.Control;
+                btn_page7.BackColor = SystemColors.Control;
+                btn_page8.BackColor = SystemColors.Control;
+
+
+
+
+                page2.SetParameterValue("Amputation", page2Model.Amputation);
+                page2.SetParameterValue("FracturesDislocation", page2Model.FracturesDislocation);
+                page2.SetParameterValue("Covid19", page2Model.Covid19);
+                page2.SetParameterValue("Repatriated", page2Model.Repatriated);
+                page2.SetParameterValue("Hospitalized", page2Model.Hospitalized);
+                page2.SetParameterValue("SeaDuty", page2Model.SeaDuty);
+                page2.SetParameterValue("Revoke", page2Model.Revoke);
+                page2.SetParameterValue("ConsiderDisease", page2Model.ConsiderDisease);
+                page2.SetParameterValue("FitToPerformDuries", page2Model.FitToPerformDuries);
+                page2.SetParameterValue("AllergicToAnyMedication", page2Model.AllergicToAnyMedication);
+                page2.SetParameterValue("AlternativeSupliment", page2Model.AlternativeSupliment);
+                page2.SetParameterValue("AlternativeSuplimentComment1", page2Model.AlternativeSuplimentComment1);
+                page2.SetParameterValue("Comment1", page2Model.Comment1);
+                page2.SetParameterValue("Comment2", page2Model.Comment2);
+                page2.SetParameterValue("Comment3", page2Model.Comment3);
+                page2.SetParameterValue("Comment4", page2Model.Comment4);
+                page2.SetParameterValue("Comment5", page2Model.Comment5);
+                page2.SetParameterValue("AlternativeSuplimentComment2", page2Model.AlternativeSuplimentComment2);
+                page2.SetParameterValue("AlternativeSuplimentComment3", page2Model.AlternativeSuplimentComment3);
+                page2.SetParameterValue("AlternativeSuplimentComment4", page2Model.AlternativeSuplimentComment4);
+                page2.SetParameterValue("AlternativeSuplimentComment5", page2Model.AlternativeSuplimentComment5);
+                page2.SetParameterValue("AlternativeSuplimentComment6", page2Model.AlternativeSuplimentComment6);
+                page2.SetParameterValue("Epilipsy", page2Model.Epilipsy);
+                page2.SetParameterValue("SickleCell", page2Model.SickleCell);
+                page2.SetParameterValue("Herinas", page2Model.Herinas);
+                page2.SetParameterValue("GenitalDisorders", page2Model.GenitalDisorders);
+                page2.SetParameterValue("Sleepproblem", page2Model.Sleepproblem);
+                page2.SetParameterValue("BackJointProblem", page2Model.BackJointProblem);
 
                 //page2.SetDataSource(data);
-                //Viewer1.ReportSource = page2;
+                Viewer1.ReportSource = page2;
 
 
             }

@@ -37,12 +37,8 @@ namespace MedicalManagementSoftware.Panama
         public string KidneyDisorders { get; set; }
         public string SkinProblem { get; set; }
         public string Allergies { get; set; }
-        public string Epilipsy { get; set; }
-        public string SickleCell { get; set; }
-        public string Herinas { get; set; }
-        public string GenitalDisorders { get; set; }
-        public string Pregnancy { get; set; }
-        public string Sleepproblem { get; set; }
+
+
         public string DoyouSmoke { get; set; }
         public string Surgeries { get; set; }
         public string Infectious { get; set; }
@@ -57,6 +53,7 @@ namespace MedicalManagementSoftware.Panama
         public string Vasculardisease { get; set; }
         public string RestrictedMobility { get; set; }
         public string BackJointProblem { get; set; }
+
 
 
         public Page1Model(
@@ -87,27 +84,7 @@ namespace MedicalManagementSoftware.Panama
        string digestiveDisorders,
        string kidneyDisorders,
        string skinProblem,
-       string allergies,
-       string epilepsy,
-       string sickleCell,
-       string hernias,
-       string genitalDisorders,
-       string pregnancy,
-       string sleepProblem,
-       string doYouSmoke,
-       string surgeries,
-       string infectious,
-       string dizzinessFainting,
-       string lossOfConsciousness,
-       string psychiatricProblem,
-       string depression,
-       string attemptedSuicide,
-       string lossOfMemory,
-       string balanceProblems,
-       string severeHeadaches,
-       string vascularDisease,
-       string restrictedMobility,
-       string backJointProblem)
+       string allergies)
         {
             Fullname = fullName;
             HomeAddress = homeAddress;
@@ -137,26 +114,21 @@ namespace MedicalManagementSoftware.Panama
             KidneyDisorders = kidneyDisorders;
             SkinProblem = skinProblem;
             Allergies = allergies;
-            Epilipsy = epilepsy;
-            SickleCell = sickleCell;
-            Herinas = hernias;
-            GenitalDisorders = genitalDisorders;
-            Pregnancy = pregnancy;
-            Sleepproblem = sleepProblem;
-            DoyouSmoke = doYouSmoke;
-            Surgeries = surgeries;
-            Infectious = infectious;
-            DizzinessFainting = dizzinessFainting;
-            Lossofconsciousness = lossOfConsciousness;
-            PsychiatricProblem = psychiatricProblem;
-            Depression = depression;
-            Attemptedsuicide = attemptedSuicide;
-            Lossofmemory = lossOfMemory;
-            BalanceProblems = balanceProblems;
-            SevereHeadAches = severeHeadaches;
-            Vasculardisease = vascularDisease;
-            RestrictedMobility = restrictedMobility;
-            BackJointProblem = backJointProblem;
+            DoyouSmoke = DoyouSmoke;
+            Surgeries = Surgeries;
+            Infectious = Infectious;
+            DizzinessFainting = DizzinessFainting;
+            Lossofconsciousness = Lossofconsciousness;
+            PsychiatricProblem = PsychiatricProblem;
+            Depression = Depression;
+            Attemptedsuicide = Attemptedsuicide;
+            Lossofmemory = Lossofmemory;
+            BalanceProblems = BalanceProblems;
+            SevereHeadAches = SevereHeadAches;
+            Vasculardisease = Vasculardisease;
+            RestrictedMobility = RestrictedMobility;
+
+
         }
 
         public Page1Model()

@@ -223,12 +223,7 @@ namespace MedicalManagementSoftware
             model.KidneyDisorders = getCheckBoxValue(cbKidneyDisordersYes);
             model.SkinProblem = getCheckBoxValue(cbSkinProblemYes);
             model.Allergies = getCheckBoxValue(cbAllergiesYes);
-            model.Epilipsy = getCheckBoxValue(cbEpilipsyYes);
-            model.SickleCell = getCheckBoxValue(cbSickleCellYes);
-            model.Herinas = getCheckBoxValue(cbHerinasYes);
-            model.GenitalDisorders = getCheckBoxValue(cbGenitalDisordersYes);
-            model.Pregnancy = getCheckBoxValue(cbPregnancyYes);
-            model.Sleepproblem = getCheckBoxValue(cbSleepproblemYes);
+
             model.DoyouSmoke = getCheckBoxValue(cbDoyouSmokeYes);
             model.Surgeries = getCheckBoxValue(cbSurgeriesYes);
             model.Infectious = getCheckBoxValue(cbInfectiousYes);
@@ -242,7 +237,6 @@ namespace MedicalManagementSoftware
             model.SevereHeadAches = getCheckBoxValue(cbSevereHeadAchesYes);
             model.Vasculardisease = getCheckBoxValue(cbVasculardiseaseYes);
             model.RestrictedMobility = getCheckBoxValue(cbRestrictedMobilityYes);
-            model.BackJointProblem = getCheckBoxValue(cbBackJointProblemYes);
 
 
 
@@ -256,6 +250,14 @@ namespace MedicalManagementSoftware
         private Page2Model prepareThePage2()
         {
             Page2Model model = new Page2Model();
+
+            model.Epilipsy = getCheckBoxValue(cbEpilipsyYes);
+            model.SickleCell = getCheckBoxValue(cbSickleCellYes);
+            model.Herinas = getCheckBoxValue(cbHerinasYes);
+            model.GenitalDisorders = getCheckBoxValue(cbGenitalDisordersYes);
+            model.Pregnancy = getCheckBoxValue(cbPregnancyYes);
+            model.Sleepproblem = getCheckBoxValue(cbSleepproblemYes);            
+            model.BackJointProblem = getCheckBoxValue(cbBackJointProblemYes);
             model.Amputation = getCheckBoxValue(cbAmputationYes);
             model.FracturesDislocation = getCheckBoxValue(cbFracturesDislocationYes);
             model.Covid19 = getCheckBoxValue(cbCovidYes);
@@ -266,24 +268,19 @@ namespace MedicalManagementSoftware
             model.ConsiderDisease = getCheckBoxValue(cbConsiderDiseaseYes);
             model.FitToPerformDuries = getCheckBoxValue(cbFitToPerformDuriesYes);
             model.AllergicToAnyMedication = getCheckBoxValue(cbAllergicToAnyMedicationYes);
-            model.AllergicToAnyMedication = getCheckBoxValue(cbAllergicAlternativeSuplimentYes);
+            model.AllergicAlter = getCheckBoxValue(cbAllergicAlternativeSuplimentYes);
             model.AlternativeSuplimentComment1 = txtAlternativeComment1.Text;
             model.AlternativeSuplimentComment2 = txtAlternativeComment2.Text;
             model.AlternativeSuplimentComment3 = txtAlternativeComment3.Text;
             model.AlternativeSuplimentComment4 = txtAlternativeComment4.Text;
             model.AlternativeSuplimentComment5 = txtAlternativeComment5.Text;
-            model.AlternativeSuplimentComment6 = txtAlternativeComment6.Text;
-            model.TakenMedications = getCheckBoxValue(cbTakenMedicationsYes);
-            model.TakenMedicationsComment1 = txtmedicationsComment1.Text;
-            model.TakenMedicationsComment2 = txtmedicationsComment2.Text;
-            model.TakenMedicationsComment3 = txtmedicationsComment3.Text;
-            model.TakenMedicationsComment4 = txtmedicationsComment4.Text;
-            model.TakenMedicationsComment5 = txtmedicationsComment5.Text;
+            model.AlternativeSuplimentComment6 = txtAlternativeComment6.Text;           
             model.Comment1 = txtExamineeComment1.Text;
             model.Comment2 = txtExamineeComment2.Text;
             model.Comment3 = txtExamineeComment3.Text;
             model.Comment4 = txtExamineeComment4.Text;
             model.Comment5 = txtExamineeComment5.Text;
+
 
             return model;
         }

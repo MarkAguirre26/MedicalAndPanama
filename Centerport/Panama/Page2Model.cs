@@ -8,6 +8,14 @@ namespace MedicalManagementSoftware.Panama
 {
     public class Page2Model
     {
+        public string Epilipsy { get; set; }
+        public string SickleCell { get; set; }
+        public string Herinas { get; set; }
+        public string GenitalDisorders { get; set; }
+        public string Pregnancy { get; set; }
+        public string Sleepproblem { get; set; }
+
+        public string BackJointProblem { get; set; }
 
         public string Amputation { get; set; }
         public string FracturesDislocation { get; set; }
@@ -21,10 +29,8 @@ namespace MedicalManagementSoftware.Panama
         public string AllergicToAnyMedication { get; set; }
         public string AlternativeSupliment { get; set; }
         public string AlternativeSuplimentComment1 { get; set; }
-        public string TakenMedications { get; set; }
-        public string TakenMedicationsComment1 { get; set; }
+
         public string Comment1 { get; set; }
-        public string ResultID { get; set; }
         public string Comment2 { get; set; }
         public string Comment3 { get; set; }
         public string Comment4 { get; set; }
@@ -33,14 +39,10 @@ namespace MedicalManagementSoftware.Panama
         public string AlternativeSuplimentComment3 { get; set; }
         public string AlternativeSuplimentComment4 { get; set; }
         public string AlternativeSuplimentComment5 { get; set; }
-        public string TakenMedicationsComment2 { get; set; }
-        public string TakenMedicationsComment3 { get; set; }
-        public string TakenMedicationsComment4 { get; set; }
-        public string TakenMedicationsComment5 { get; set; }
         public string AlternativeSuplimentComment6 { get; set; }
 
 
-     
+
 
 
         public Page2Model()
