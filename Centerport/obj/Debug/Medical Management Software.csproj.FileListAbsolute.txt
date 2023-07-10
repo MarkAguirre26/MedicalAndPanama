@@ -209,3 +209,6 @@ D:\Files\Devs\Project\Centerport\2023\CenterportMedical2023-main\Centerport\obj\
 D:\Files\Devs\Project\Centerport\2023\CenterportMedical2023-main\Centerport\obj\Debug\Medical Management Software.exe
 D:\Files\Devs\Project\Centerport\2023\CenterportMedical2023-main\Centerport\obj\Debug\Medical Management Software.pdb
 D:\Files\Devs\Project\Centerport\2023\CenterportMedical2023-main\Centerport\obj\Debug\Medical Management Software.csprojResolveAssemblyReference.cache
+D:\Files\Devs\Project\Centerport\2023\MedicalAndPanama\Centerport\bin\Debug\Medical Management Software.exe.config
+D:\Files\Devs\Project\Centerport\2023\MedicalAndPanama\Centerport\obj\Debug\Medical Management Software.exe
+D:\Files\Devs\Project\Centerport\2023\MedicalAndPanama\Centerport\obj\Debug\Medical Management Software.pdb

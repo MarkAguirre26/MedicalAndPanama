@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MedicalManagementSoftware.Report {
+namespace MedicalManagementSoftware.Panama {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace MedicalManagementSoftware.Report {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class PanamaPage3 : ReportClass {
+    public class PanamaPage2 : ReportClass {
         
-        public PanamaPage3() {
+        public PanamaPage2() {
         }
         
         public override string ResourceName {
             get {
-                return "PanamaPage3.rpt";
+                return "PanamaPage2.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace MedicalManagementSoftware.Report {
         
         public override string FullResourceName {
             get {
-                return "MedicalManagementSoftware.Report.PanamaPage3.rpt";
+                return "MedicalManagementSoftware.Panama.PanamaPage2.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace MedicalManagementSoftware.Report {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedPanamaPage3 : Component, ICachedReport {
+    public class CachedPanamaPage2 : Component, ICachedReport {
         
-        public CachedPanamaPage3() {
+        public CachedPanamaPage2() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace MedicalManagementSoftware.Report {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            PanamaPage3 rpt = new PanamaPage3();
+            PanamaPage2 rpt = new PanamaPage2();
             rpt.Site = this.Site;
             return rpt;
         }
