@@ -18,8 +18,8 @@ namespace MedicalManagementSoftware.Report
     {
         public Page1Model page1Model;
         public Page2Model page2Model;
-
-
+        public Page3Model page3Model;
+        public Page4Model page4Model;
 
 
 
@@ -569,7 +569,7 @@ namespace MedicalManagementSoftware.Report
                 page2.SetParameterValue("FitToPerformDuries", page2Model.FitToPerformDuries);
                 page2.SetParameterValue("AllergicToAnyMedication", page2Model.AllergicToAnyMedication);
                 page2.SetParameterValue("AlternativeSupliment", page2Model.AlternativeSupliment);
-                
+
                 page2.SetParameterValue("Comment1", page2Model.Comment1);
                 page2.SetParameterValue("Comment2", page2Model.Comment2);
                 page2.SetParameterValue("Comment3", page2Model.Comment3);
@@ -580,9 +580,9 @@ namespace MedicalManagementSoftware.Report
                 page2.SetParameterValue("AlternativeSuplimentComment2", page2Model.AlternativeSuplimentComment2);
                 page2.SetParameterValue("AlternativeSuplimentComment3", page2Model.AlternativeSuplimentComment3);
                 page2.SetParameterValue("AlternativeSuplimentComment4", page2Model.AlternativeSuplimentComment4);
-                page2.SetParameterValue("AlternativeSuplimentComment5", page2Model.AlternativeSuplimentComment5);              
-                
-              
+                page2.SetParameterValue("AlternativeSuplimentComment5", page2Model.AlternativeSuplimentComment5);
+
+
 
                 //page2.SetDataSource(data);
                 Viewer1.ReportSource = page2;
@@ -592,46 +592,96 @@ namespace MedicalManagementSoftware.Report
             else if (pageIndex == 3)
             {
 
-                //PanamaPage3 page3 = new PanamaPage3();
-                //Viewer1.ReportSource = page3;
-                //btn_page1.BackColor = SystemColors.Control;
-                //btn_page2.BackColor = SystemColors.Control;
-                //btn_page3.BackColor = SystemColors.ActiveCaption;
-                //btn_page4.BackColor = SystemColors.Control;
-                //btn_page5.BackColor = SystemColors.Control;
-                //btn_page6.BackColor = SystemColors.Control;
-                //btn_page7.BackColor = SystemColors.Control;
-                //btn_page8.BackColor = SystemColors.Control;
+                PanamaPage3 page3 = new PanamaPage3();
+                Viewer1.ReportSource = page3;
+                btn_page1.BackColor = SystemColors.Control;
+                btn_page2.BackColor = SystemColors.Control;
+                btn_page3.BackColor = SystemColors.ActiveCaption;
+                btn_page4.BackColor = SystemColors.Control;
+                btn_page5.BackColor = SystemColors.Control;
+                btn_page6.BackColor = SystemColors.Control;
+                btn_page7.BackColor = SystemColors.Control;
+                btn_page8.BackColor = SystemColors.Control;
+
+
+                page3.SetParameterValue("TakenMedications", page3Model.TakenMedications);
+                page3.SetParameterValue("TakenMedicationsComment1", page3Model.TakenMedicationsComment1);
+                page3.SetParameterValue("TakenMedicationsComment2", page3Model.TakenMedicationsComment2);
+                page3.SetParameterValue("TakenMedicationsComment3", page3Model.TakenMedicationsComment3);
+                page3.SetParameterValue("TakenMedicationsComment4", page3Model.TakenMedicationsComment4);
+                page3.SetParameterValue("TakenMedicationsComment5", page3Model.TakenMedicationsComment5);
+                page3.SetParameterValue("ContactInCovidPositive", page3Model.ContactInCovidPositive);
+                page3.SetParameterValue("CovidTest", page3Model.CovidTest);
+                page3.SetParameterValue("CovidDateTest", page3Model.CovidDateTest);
+                page3.SetParameterValue("HadFeverLast30Days", page3Model.HadFeverLast30Days);
+                page3.SetParameterValue("VaccinationCovid", page3Model.VaccinationCovid);
+                page3.SetParameterValue("VaccineType", page3Model.VaccineType);
+                page3.SetParameterValue("NumberofDoses", page3Model.NumberofDoses);
+                page3.SetParameterValue("Booster", page3Model.Booster);
+                page3.SetParameterValue("Day", page3Model.Day);
+                page3.SetParameterValue("Month", page3Model.Month);
+                page3.SetParameterValue("Year", page3Model.Year);
+                page3.SetParameterValue("NameOfUndergoingExamination", page3Model.NameOfUndergoingExamination);
+
+
+
 
                 //page3.SetDataSource(data);
-                //Viewer1.ReportSource = page3;
+                Viewer1.ReportSource = page3;
 
 
             }
             else if (pageIndex == 4)
             {
-                //PanamaPage4 page = new PanamaPage4();
-                //Viewer1.ReportSource = page;
-                //btn_page1.BackColor = SystemColors.Control;
-                //btn_page2.BackColor = SystemColors.Control;
-                //btn_page3.BackColor = SystemColors.Control;
-                //btn_page4.BackColor = SystemColors.ActiveCaption;
-                //btn_page5.BackColor = SystemColors.Control;
-                //btn_page6.BackColor = SystemColors.Control;
-                //btn_page7.BackColor = SystemColors.Control;
-                //btn_page8.BackColor = SystemColors.Control;
+                PanamaPage4 page4 = new PanamaPage4();
+                Viewer1.ReportSource = page4;
+                btn_page1.BackColor = SystemColors.Control;
+                btn_page2.BackColor = SystemColors.Control;
+                btn_page3.BackColor = SystemColors.Control;
+                btn_page4.BackColor = SystemColors.ActiveCaption;
+                btn_page5.BackColor = SystemColors.Control;
+                btn_page6.BackColor = SystemColors.Control;
+                btn_page7.BackColor = SystemColors.Control;
+                btn_page8.BackColor = SystemColors.Control;
 
-                //TextObject txtNameOfWitness1 = (TextObject)page.ReportDefinition.ReportObjects["txtNameOfWitness1"];
-                //TextObject txtNameOfWitness21 = (TextObject)page.ReportDefinition.ReportObjects["txtNameOfWitness2"];
 
-                //txtNameOfWitness1.Text = NameOfWitness1;
-                //txtNameOfWitness21.Text = NameOfWitness1;
-
+                page4.SetParameterValue("NameOfWitness", page4Model.NameOfWitness);
+                page4.SetParameterValue("DoctorName", page4Model.DoctorName);
+                page4.SetParameterValue("UndergoingExamination", page4Model.UndergoingExamination);
+                page4.SetParameterValue("UndergoingDate", page4Model.UndergoingDate);
+                page4.SetParameterValue("NameOfWitness2", page4Model.NameOfWitness2);
+                page4.SetParameterValue("PreviousMedical", page4Model.PreviousMedical);
+                page4.SetParameterValue("Height", page4Model.Height);
+                page4.SetParameterValue("HeartRate", page4Model.HeartRate);
+                page4.SetParameterValue("BloodPressure", page4Model.BloodPressure);
+                page4.SetParameterValue("Weight", page4Model.Weight);
+                page4.SetParameterValue("BMI", page4Model.BMI);
+                page4.SetParameterValue("Oxygen", page4Model.Oxygen);
+                page4.SetParameterValue("Respiratory", page4Model.Respiratory);
+                page4.SetParameterValue("Diastolic", page4Model.Diastolic);
+                page4.SetParameterValue("UnaidedRightEyeDistant", page4Model.UnaidedRightEyeDistant);
+                page4.SetParameterValue("UnaidedRightEyeShort", page4Model.UnaidedRightEyeShort);
+                page4.SetParameterValue("UnAidedLeftEyeDistant", page4Model.UnAidedLeftEyeDistant);
+                page4.SetParameterValue("UnAidedLeftEyeShort", page4Model.UnAidedLeftEyeShort);
+                page4.SetParameterValue("UnAidedBonocularDistant", page4Model.UnAidedBonocularDistant);
+                page4.SetParameterValue("UnAidedBonocularShort", page4Model.UnAidedBonocularShort);
+                page4.SetParameterValue("AidedRightEyeDistant", page4Model.AidedRightEyeDistant);
+                page4.SetParameterValue("AidedRightEyeShort", page4Model.AidedRightEyeShort);
+                page4.SetParameterValue("AidedLeftEyeDistant", page4Model.AidedLeftEyeDistant);
+                page4.SetParameterValue("AidedLeftEyeShort", page4Model.AidedLeftEyeShort);
+                page4.SetParameterValue("AidedBinocularDistant", page4Model.AidedBinocularDistant);
+                page4.SetParameterValue("AidedBinocularShort", page4Model.AidedBinocularShort);
+                page4.SetParameterValue("NormalRightEye", page4Model.NormalRightEye);
+                page4.SetParameterValue("DefectiveRightEye", page4Model.DefectiveRightEye);
+                page4.SetParameterValue("NormalLeftEye", page4Model.NormalLeftEye);
+                page4.SetParameterValue("DefectiveLeftEye", page4Model.DefectiveLeftEye);
+                page4.SetParameterValue("ColorVision", page4Model.ColorVision);
+                page4.SetParameterValue("Ishihara", page4Model.Ishihara);
 
 
 
                 //page.SetDataSource(data);
-                //Viewer1.ReportSource = page;
+                Viewer1.ReportSource = page4;
 
 
 

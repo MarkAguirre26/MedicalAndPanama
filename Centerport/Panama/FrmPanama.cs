@@ -22,6 +22,7 @@ namespace MedicalManagementSoftware
         public DataClasses1DataContext db = new DataClasses1DataContext(Properties.Settings.Default.MyConString);
         public List<Panama_SeaMLC> Panama_SeaMLC_model = new List<Panama_SeaMLC>();
 
+        private string fitnessdate;
         public FrmPanama(Main main)
         {
             InitializeComponent();
@@ -142,6 +143,7 @@ namespace MedicalManagementSoftware
             FrmPanamaReport print = new FrmPanamaReport();
             print.page1Model = prepareThePage1();
             print.page2Model = prepareThePage2();
+            print.page3Model = prepareThePage3();
             print.ShowDialog();
 
         }
@@ -154,6 +156,7 @@ namespace MedicalManagementSoftware
             model.HomeAddress = txtHomeAddress.Text;
             model.Department = txtDepartment.Text;
             model.Position = txtPosition.Text;
+
             if (rbMale.Checked == true)
             {
                 model.Gender = "Male";
@@ -256,7 +259,7 @@ namespace MedicalManagementSoftware
             model.Herinas = getCheckBoxValue(cbHerinasYes);
             model.GenitalDisorders = getCheckBoxValue(cbGenitalDisordersYes);
             model.Pregnancy = getCheckBoxValue(cbPregnancyYes);
-            model.Sleepproblem = getCheckBoxValue(cbSleepproblemYes);            
+            model.Sleepproblem = getCheckBoxValue(cbSleepproblemYes);
             model.BackJointProblem = getCheckBoxValue(cbBackJointProblemYes);
             model.Amputation = getCheckBoxValue(cbAmputationYes);
             model.FracturesDislocation = getCheckBoxValue(cbFracturesDislocationYes);
@@ -288,6 +291,126 @@ namespace MedicalManagementSoftware
             return model;
         }
 
+
+
+        private Page3Model prepareThePage3()
+        {
+            Page3Model model = new Page3Model();
+            model.ContactInCovidPositive = getCheckBoxValue(cbContactInCovidPositiveYes);
+            model.TakenMedications = "No";
+            if (cbTakenMedicationsYes.Checked)
+            {
+                model.TakenMedications = "Yes";
+
+            }
+            model.TakenMedicationsComment1 = txtmedicationsComment1.Text;
+            model.TakenMedicationsComment2 = txtmedicationsComment2.Text;
+            model.TakenMedicationsComment3 = txtmedicationsComment3.Text;
+            model.TakenMedicationsComment4 = txtmedicationsComment4.Text;
+            model.TakenMedicationsComment5 = txtmedicationsComment5.Text;
+
+            model.ContactInCovidPositive = "No";
+            if (cbContactInCovidPositiveYes.Checked)
+            {
+                model.ContactInCovidPositive = "Yes";
+            }
+
+            model.CovidTest = "No";
+            if (cbCovidTestYes.Checked)
+            {
+                model.CovidTest = "Yes";
+            }
+
+            model.CovidDateTest = txtCividTestDate.Text;
+            model.HadFeverLast30Days = "No";
+            if (cbHadFeverLast30DaysYes.Checked)
+            {
+                model.HadFeverLast30Days = "Yes";
+            }
+            model.VaccinationCovid = "No";
+            if (cbVaccinationCovidYes.Checked)
+            {
+                model.VaccinationCovid = "Yes";
+            }
+            model.VaccineType = txtVaccineType.Text;
+            model.NumberofDoses = txtNumberofDoses.Text;
+            model.Booster = txtBooster.Text;
+
+            model.NameOfUndergoingExamination = txtFullaname.Text;
+
+
+
+
+            char delimiter = '/';
+            string[] substrings = fitnessdate.Split(delimiter);
+
+
+            model.Day = substrings[0];
+            model.Month = substrings[1];
+            model.Year = substrings[2];
+
+            return model;
+        }
+
+
+        private Page4Model prepareThePage4()
+        {
+            Page4Model model = new Page4Model();
+            model.NameOfWitness = txtNameOfWitness.Text;
+            model.DoctorName = txtDoctorName.Text;
+            model.UndergoingExamination = txtUndergoingExamination.Text;
+            model.UndergoingDate = txtUndergoingDate.Text;
+            model.NameOfWitness2 = txtNameOfWitness2.Text;
+            model.PreviousMedical = txtPreviousMedical.Text;
+            model.Height = txtHeight.Text;
+            model.HeartRate = txtHeartRate.Text;
+            model.BloodPressure = txtBloodPressure.Text;
+            model.Weight = txtWeight.Text;
+            model.BMI = txtBMI.Text;
+            model.Oxygen = txtOxygen.Text;
+            model.Respiratory = txtRespiratory.Text;
+            model.Diastolic = txtDiastolic.Text;
+            model.UnaidedRightEyeDistant = txtUnaidedRightEyeDistant.Text;
+            model.UnaidedRightEyeShort = txtUnaidedRightEyeShort.Text;
+            model.UnAidedLeftEyeDistant = txtUnAidedLeftEyeDistant.Text;
+            model.UnAidedLeftEyeShort = txtUnAidedLeftEyeShort.Text;
+            model.UnAidedBonocularDistant = txtUnAidedBonocularDistant.Text;
+            model.UnAidedBonocularShort = txtUnAidedBonocularShort.Text;
+            model.AidedRightEyeDistant = txtAidedRightEyeDistant.Text;
+            model.AidedRightEyeShort = txtAidedRightEyeShort.Text;
+            model.AidedLeftEyeDistant = txtAidedLeftEyeDistant.Text;
+            model.AidedLeftEyeShort = txtAidedLeftEyeShort.Text;
+            model.AidedBinocularDistant = txtAidedBinocularDistant.Text;
+            model.AidedBinocularShort = txtAidedBinocularShort.Text;
+            model.NormalRightEye = txtNormalRightEye.Text;
+            model.DefectiveRightEye = txtDefectiveRightEye.Text;
+            model.NormalLeftEye = txtNormalLeftEye.Text;
+            model.DefectiveLeftEye = txtDefectiveLeftEye.Text;
+            string ColorVision = "";
+            if (cbNonTestedColorVision.Checked)
+            {
+                ColorVision = "NonTestedColorVision";
+            }
+            else if (cbNormalColorVision.Checked)
+            {
+                ColorVision = "NormalColorVision";
+            }
+            else if (cbDoubtfulColorVision.Checked)
+            {
+                ColorVision = "DoubtfulColorVision";
+            }
+            else if (cbDefectiveColorVision.Checked)
+            {
+                ColorVision = "DefectiveColorVision";
+            }
+
+
+            model.ColorVision = ColorVision;
+            model.Ishihara = "Ishihara";
+
+
+            return model;
+        }
 
 
 
@@ -672,7 +795,7 @@ namespace MedicalManagementSoftware
 
             //dtUndergoingExamination.Value = DateTime.Now;
             //checkBox107.Checked = false;
-            txtundergoingExaminationDate.Text = "";
+            txtundergoingExaminationDate.Text = fitnessdate;
 
 
 
@@ -2618,6 +2741,8 @@ namespace MedicalManagementSoftware
                 txtUndergoingExamination.Text = i.Fullname;
                 txtSpecimenNo.Text = i.specimen_no;
                 txtundergoingExaminationDate.Text = i.fitness_date;
+                fitnessdate = i.fitness_date;
+
                 txtDoctorName.Text = i.pathologist;
                 txtHomeAddress.Text = i.HomeAddress;
                 txtDepartment.Text = i.Department;
