@@ -645,8 +645,7 @@ namespace MedicalManagementSoftware.Report
                 btn_page8.BackColor = SystemColors.Control;
 
 
-                page4.SetParameterValue("NameOfWitness", page4Model.NameOfWitness);
-                page4.SetParameterValue("DoctorName", page4Model.DoctorName);
+                page4.SetParameterValue("NameOfWitness", page4Model.NameOfWitness);             
                 page4.SetParameterValue("UndergoingExamination", page4Model.UndergoingExamination);
                 page4.SetParameterValue("UndergoingDate", page4Model.UndergoingDate);
                 page4.SetParameterValue("NameOfWitness2", page4Model.NameOfWitness2);

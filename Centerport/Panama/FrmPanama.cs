@@ -144,6 +144,7 @@ namespace MedicalManagementSoftware
             print.page1Model = prepareThePage1();
             print.page2Model = prepareThePage2();
             print.page3Model = prepareThePage3();
+            print.page4Model = prepareThePage4();
             print.ShowDialog();
 
         }
