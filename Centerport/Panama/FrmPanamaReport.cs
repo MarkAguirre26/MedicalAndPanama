@@ -21,6 +21,9 @@ namespace MedicalManagementSoftware.Report
         public Page3Model page3Model;
         public Page4Model page4Model;
         public Page5Model page5Model;
+        public Page6Model page6Model;
+        public Page7Model page7Model;
+        public Page8Model page8Model;
 
 
 
@@ -646,7 +649,7 @@ namespace MedicalManagementSoftware.Report
                 btn_page8.BackColor = SystemColors.Control;
 
 
-                page4.SetParameterValue("NameOfWitness", page4Model.NameOfWitness);             
+                page4.SetParameterValue("NameOfWitness", page4Model.NameOfWitness);
                 page4.SetParameterValue("UndergoingExamination", page4Model.UndergoingExamination);
                 page4.SetParameterValue("UndergoingDate", page4Model.UndergoingDate);
                 page4.SetParameterValue("NameOfWitness2", page4Model.NameOfWitness2);
@@ -751,85 +754,166 @@ namespace MedicalManagementSoftware.Report
             }
             else if (pageIndex == 6)
             {
-                //PanamaPage6 page6 = new PanamaPage6();
-                //Viewer1.ReportSource = page6;
+                PanamaPage6 page6 = new PanamaPage6();
+                Viewer1.ReportSource = page6;
 
-                //btn_page1.BackColor = SystemColors.Control;
-                //btn_page2.BackColor = SystemColors.Control;
-                //btn_page3.BackColor = SystemColors.Control;
-                //btn_page4.BackColor = SystemColors.Control;
-                //btn_page5.BackColor = SystemColors.Control;
-                //btn_page6.BackColor = SystemColors.ActiveCaption;
-                //btn_page7.BackColor = SystemColors.Control;
-                //btn_page8.BackColor = SystemColors.Control;
-
-                //page6.SetDataSource(data);
+                btn_page1.BackColor = SystemColors.Control;
+                btn_page2.BackColor = SystemColors.Control;
+                btn_page3.BackColor = SystemColors.Control;
+                btn_page4.BackColor = SystemColors.Control;
+                btn_page5.BackColor = SystemColors.Control;
+                btn_page6.BackColor = SystemColors.ActiveCaption;
+                btn_page7.BackColor = SystemColors.Control;
+                btn_page8.BackColor = SystemColors.Control;
 
 
-                //Viewer1.ReportSource = page6;
+                page6.SetParameterValue("Lipid", page6Model.Lipid);
+                page6.SetParameterValue("LipidNormal", page6Model.LipidNormal);
+                page6.SetParameterValue("LipidAbNormal", page6Model.LipidAbNormal);
+                page6.SetParameterValue("LipidObservation", page6Model.LipidObservation);
+                page6.SetParameterValue("Creatinine", page6Model.Creatinine);
+                page6.SetParameterValue("CreatinineNormal", page6Model.CreatinineNormal);
+                page6.SetParameterValue("CreatinineAbnormal", page6Model.CreatinineAbnormal);
+                page6.SetParameterValue("CreatinineObservation", page6Model.CreatinineObservation);
+                page6.SetParameterValue("Cholesterol", page6Model.Cholesterol);
+                page6.SetParameterValue("CholesterolNormal", page6Model.CholesterolNormal);
+                page6.SetParameterValue("CholesterolAbnormal", page6Model.CholesterolAbnormal);
+                page6.SetParameterValue("CholesterolObservation", page6Model.CholesterolObservation);
+                page6.SetParameterValue("Triglycerides", page6Model.Triglycerides);
+                page6.SetParameterValue("TriglyceridesNormal", page6Model.TriglyceridesNormal);
+                page6.SetParameterValue("TriglyceridesAbnormal", page6Model.TriglyceridesAbnormal);
+                page6.SetParameterValue("TriglyceridesObservation", page6Model.TriglyceridesObservation);
+                page6.SetParameterValue("Glucose", page6Model.Glucose);
+                page6.SetParameterValue("GlucoseNormal", page6Model.GlucoseNormal);
+                page6.SetParameterValue("GlucoseAbNormal", page6Model.GlucoseAbNormal);
+                page6.SetParameterValue("GlucoseObservation", page6Model.GlucoseObservation);
+                page6.SetParameterValue("Nitrogen", page6Model.Nitrogen);
+                page6.SetParameterValue("NitrogenNormal", page6Model.NitrogenNormal);
+                page6.SetParameterValue("NitrogenAbnormal", page6Model.NitrogenAbnormal);
+                page6.SetParameterValue("NitrogenObservation", page6Model.NitrogenObservation);
+                page6.SetParameterValue("RhTyping", page6Model.RhTyping);
+                page6.SetParameterValue("RhTypingNormal", page6Model.RhTypingNormal);
+                page6.SetParameterValue("RhTypingAbnormal", page6Model.RhTypingAbnormal);
+                page6.SetParameterValue("RhTypingObservation", page6Model.RhTypingObservation);
+                page6.SetParameterValue("Hiv", page6Model.Hiv);
+                page6.SetParameterValue("HivNormal", page6Model.HivNormal);
+                page6.SetParameterValue("HivAbnormal", page6Model.HivAbnormal);
+                page6.SetParameterValue("HivObservation", page6Model.HivObservation);
+                page6.SetParameterValue("Vdrl", page6Model.Vdrl);
+                page6.SetParameterValue("VdrlNormal", page6Model.VdrlNormal);
+                page6.SetParameterValue("VdrlAbnormal", page6Model.VdrlAbnormal);
+                page6.SetParameterValue("VdrlObservation", page6Model.VdrlObservation);
+                page6.SetParameterValue("Gch", page6Model.Gch);
+                page6.SetParameterValue("GchNormal", page6Model.GchNormal);
+                page6.SetParameterValue("GchAbnormal", page6Model.GchAbnormal);
+                page6.SetParameterValue("GchObservation", page6Model.GchObservation);
+                page6.SetParameterValue("GeneralUrien", page6Model.GeneralUrien);
+                page6.SetParameterValue("GeneralUrineNormal", page6Model.GeneralUrineNormal);
+                page6.SetParameterValue("GeneralUrineAbNormal", page6Model.GeneralUrineAbNormal);
+                page6.SetParameterValue("GeneralUrineObservation", page6Model.GeneralUrineObservation);
+                page6.SetParameterValue("Stool", page6Model.Stool);
+                page6.SetParameterValue("StoolNormal", page6Model.StoolNormal);
+                page6.SetParameterValue("StoolAbNormal", page6Model.StoolAbNormal);
+                page6.SetParameterValue("StoolObservation", page6Model.StoolObservation);
+                page6.SetParameterValue("Drugtest", page6Model.Drugtest);
+                page6.SetParameterValue("DrugTestNormal", page6Model.DrugTestNormal);
+                page6.SetParameterValue("DrugTestAbNormal", page6Model.DrugTestAbNormal);
+                page6.SetParameterValue("DrugTestObservation", page6Model.DrugTestObservation);
+                page6.SetParameterValue("Alcohol", page6Model.Alcohol);
+                page6.SetParameterValue("AlcoholNormal", page6Model.AlcoholNormal);
+                page6.SetParameterValue("AlcoholAbNormal", page6Model.AlcoholAbNormal);
+                page6.SetParameterValue("AlcoholObservation", page6Model.AlcoholObservation);
+                page6.SetParameterValue("BreastExamination", page6Model.BreastExamination);
+                page6.SetParameterValue("BreastExaminationNormal", page6Model.BreastExaminationNormal);
+                page6.SetParameterValue("BreastExaminationAbNormal", page6Model.BreastExaminationAbNormal);
+                page6.SetParameterValue("BreastExaminationObservation", page6Model.BreastExaminationObservation);
+                page6.SetParameterValue("PapTest", page6Model.PapTest);
+                page6.SetParameterValue("PaptestJNormal", page6Model.PaptestJNormal);
+                page6.SetParameterValue("PapAbnormal", page6Model.PapAbnormal);
+                page6.SetParameterValue("PapObservation", page6Model.PapObservation);
+                page6.SetParameterValue("Psa", page6Model.Psa);
+                page6.SetParameterValue("PsaNormal", page6Model.PsaNormal);
+                page6.SetParameterValue("PsaAbNormal", page6Model.PsaAbNormal);
+                page6.SetParameterValue("PsaObservation", page6Model.PsaObservation);
+                page6.SetParameterValue("Xray", page6Model.Xray);
+                page6.SetParameterValue("XrayPerformed", page6Model.XrayPerformed);
+                page6.SetParameterValue("XrayObservation", page6Model.XrayObservation);
+                page6.SetParameterValue("Ekg", page6Model.Ekg);
+                page6.SetParameterValue("EZGPerformed", page6Model.EZGPerformed);
+                page6.SetParameterValue("EkgObservation", page6Model.EkgObservation);
+                Viewer1.ReportSource = page6;
 
 
 
             }
             else if (pageIndex == 7)
             {
-                //PanamaPage7 page = new PanamaPage7();
-                //Viewer1.ReportSource = page;
+                PanamaPage7 page7 = new PanamaPage7();
+                Viewer1.ReportSource = page7;
 
-                //btn_page1.BackColor = SystemColors.Control;
-                //btn_page2.BackColor = SystemColors.Control;
-                //btn_page3.BackColor = SystemColors.Control;
-                //btn_page4.BackColor = SystemColors.Control;
-                //btn_page5.BackColor = SystemColors.Control;
-                //btn_page6.BackColor = SystemColors.Control;
-                //btn_page7.BackColor = SystemColors.ActiveCaption;
-                //btn_page8.BackColor = SystemColors.Control;
+                btn_page1.BackColor = SystemColors.Control;
+                btn_page2.BackColor = SystemColors.Control;
+                btn_page3.BackColor = SystemColors.Control;
+                btn_page4.BackColor = SystemColors.Control;
+                btn_page5.BackColor = SystemColors.Control;
+                btn_page6.BackColor = SystemColors.Control;
+                btn_page7.BackColor = SystemColors.ActiveCaption;
+                btn_page8.BackColor = SystemColors.Control;
 
-                //page.SetDataSource(data);
-
-
-                //Viewer1.ReportSource = page;
+                page7.SetParameterValue("TestResult", page7Model.TestResult);
+                page7.SetParameterValue("ResultResult", page7Model.ResultResult);
+                page7.SetParameterValue("Reason1", page7Model.Reason1);
+                page7.SetParameterValue("Reason2", page7Model.Reason2);
+                page7.SetParameterValue("Reason3", page7Model.Reason3);
+                page7.SetParameterValue("Reason4", page7Model.Reason4);
+                page7.SetParameterValue("FirForLookOut", page7Model.FirForLookOut);
+                page7.SetParameterValue("NotFirForLookOut", page7Model.NotFirForLookOut);
+                page7.SetParameterValue("Fit", page7Model.Fit);
+                page7.SetParameterValue("Unfit", page7Model.Unfit);
+                page7.SetParameterValue("EngineServiceFit", page7Model.EngineServiceFit);
+                page7.SetParameterValue("EngineServiceNotFit", page7Model.EngineServiceNotFit);
+                page7.SetParameterValue("CateringServiceFit", page7Model.CateringServiceFit);
+                page7.SetParameterValue("CateringServiceNotFit", page7Model.CateringServiceNotFit);
+                page7.SetParameterValue("OtherServiceFit", page7Model.OtherServiceFit);
+                page7.SetParameterValue("OtherServiceNotFit", page7Model.OtherServiceNotFit);
+                page7.SetParameterValue("WithoutRestriction", page7Model.WithoutRestriction);
+                page7.SetParameterValue("WithRestriction", page7Model.WithRestriction);
+                page7.SetParameterValue("VisualReqiuredYes", page7Model.VisualReqiuredYes);
+                page7.SetParameterValue("VisualReqiuredNo", page7Model.VisualReqiuredNo);
+                page7.SetParameterValue("Restriction1", page7Model.Restriction1);
+                page7.SetParameterValue("Restriction2", page7Model.Restriction2);
+                page7.SetParameterValue("Restriction3", page7Model.Restriction3);
+                Viewer1.ReportSource = page7;
 
 
 
             }
             else if (pageIndex == 8)
             {
-                //PanamaPage8 page = new PanamaPage8();
-                //Viewer1.ReportSource = page;
+                PanamaPage8 page8 = new PanamaPage8();
+                Viewer1.ReportSource = page8;
 
-                //btn_page1.BackColor = SystemColors.Control;
-                //btn_page2.BackColor = SystemColors.Control;
-                //btn_page3.BackColor = SystemColors.Control;
-                //btn_page4.BackColor = SystemColors.Control;
-                //btn_page5.BackColor = SystemColors.Control;
-                //btn_page6.BackColor = SystemColors.Control;
-                //btn_page7.BackColor = SystemColors.Control;
-                //btn_page8.BackColor = SystemColors.ActiveCaption;
+                btn_page1.BackColor = SystemColors.Control;
+                btn_page2.BackColor = SystemColors.Control;
+                btn_page3.BackColor = SystemColors.Control;
+                btn_page4.BackColor = SystemColors.Control;
+                btn_page5.BackColor = SystemColors.Control;
+                btn_page6.BackColor = SystemColors.Control;
+                btn_page7.BackColor = SystemColors.Control;
+                btn_page8.BackColor = SystemColors.ActiveCaption;
 
-                //page.SetDataSource(data);
+                page8.SetParameterValue("Restriction4", page8Model.Restriction4);
+                page8.SetParameterValue("Restriction5", page8Model.Restriction5);
+                page8.SetParameterValue("expirationDay", page8Model.expirationDay);
+                page8.SetParameterValue("expirationMonth", page8Model.expirationMonth);
+                page8.SetParameterValue("expirationYear", page8Model.expirationYear);
+                page8.SetParameterValue("IssuedDay", page8Model.IssuedDay);
+                page8.SetParameterValue("IssuedMonth", page8Model.IssuedMonth);
+                page8.SetParameterValue("IssuedYear", page8Model.IssuedYear);
+                page8.SetParameterValue("PhysicianName", page8Model.PhysicianName);
+                Viewer1.ReportSource = page8;
 
-
-                //TextObject txtexpirationDay = (TextObject)page.ReportDefinition.ReportObjects["txtexpirationDay"];
-                //TextObject txtexpirationMonth = (TextObject)page.ReportDefinition.ReportObjects["txtexpirationMonth"];
-                //TextObject txtexpirationYear = (TextObject)page.ReportDefinition.ReportObjects["txtexpirationYear"];
-                //txtexpirationDay.Text = "Day: " + expirationDay;
-                //txtexpirationMonth.Text = "Month: " + expirationMonth;
-                //txtexpirationYear.Text = "Year: " + expirationYear;
-
-                //TextObject txtissuedDay = (TextObject)page.ReportDefinition.ReportObjects["txtissuedDay"];
-                //TextObject txtissuedMonth = (TextObject)page.ReportDefinition.ReportObjects["txtissuedMonth"];
-                //TextObject txtissuedYear = (TextObject)page.ReportDefinition.ReportObjects["txtissuedYear"];
-                //txtissuedDay.Text = "Day: " + issuedDay;
-                //txtissuedMonth.Text = "Month: " + issuedMonth;
-                //txtissuedYear.Text = "Year: " + issuedYear;
-
-                //TextObject txtPhysicianName = (TextObject)page.ReportDefinition.ReportObjects["txtPhysicianName"];
-                //txtPhysicianName.Text = physicianName;
-                //Viewer1.ReportSource = page;
-
-
-
+                
             }
 
             RemoveTab(Viewer1);

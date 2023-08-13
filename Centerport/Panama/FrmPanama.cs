@@ -146,7 +146,56 @@ namespace MedicalManagementSoftware
             print.page3Model = prepareThePage3();
             print.page4Model = prepareThePage4();
             print.page5Model = prepareThePage5();
+            print.page6Model = prepareThePage6();
+            print.page7Model = prepareThePage7();
+            print.page8Model = prepareThePage8();
             print.ShowDialog();
+
+        }
+
+        private Page8Model prepareThePage8()
+        {
+            Page8Model model = new Page8Model();
+            model.Restriction4 = txtAssessmentComment4.Text;
+            model.Restriction5 = txtAssessmentComment5.Text;
+            model.expirationDay = txtExpirationDay.Text;
+            model.expirationMonth = txtExpirationMonth.Text;
+            model.expirationYear = txtExpirationYear.Text;
+            model.IssuedDay = txtIssuedDay.Text;
+            model.IssuedMonth = txtIssuedMonth.Text;
+            model.IssuedYear = txtIssuedYear.Text;
+            model.PhysicianName = txtPhysicianName.Text;
+
+            return model;
+        }
+
+        private Page7Model prepareThePage7()
+        {
+            Page7Model model = new Page7Model();
+            model.TestResult = txtOtherDiagnosticTest.Text;
+            model.ResultResult = txtOtherDiagnosticResult.Text;
+            model.Reason1 = txtOtherDiagnosticComment1.Text;
+            model.Reason2 = txtOtherDiagnosticComment2.Text;
+            model.Reason3 = txtOtherDiagnosticComment3.Text;
+            model.Reason4 = txtOtherDiagnosticComment4.Text;
+            model.FirForLookOut = getRadioButtonValue(rbFitForLookOut);
+            model.NotFirForLookOut = getRadioButtonValue(rbNonFitForLookOut);
+            model.Fit = getRadioButtonValue(rbFitForLookOut);
+            model.Unfit = getRadioButtonValue(rbNonFitForLookOut);
+            model.EngineServiceFit = getCheckBoxValue(cbDeckServiceFit);
+            model.EngineServiceNotFit = getCheckBoxValue(cbDeckServiceUnFit);
+            model.CateringServiceFit = getCheckBoxValue(cbCateringFit);
+            model.CateringServiceNotFit = getCheckBoxValue(cbCateringUnFit);
+            model.OtherServiceFit = getCheckBoxValue(cbOtherServiceFit);
+            model.OtherServiceNotFit = getCheckBoxValue(OtherServiceNotFit);
+            model.WithoutRestriction = getRadioButtonValue(rbWithOutRestrictions);
+            model.WithRestriction = getRadioButtonValue(rbWithRestrictions);
+            model.VisualReqiuredYes = getRadioButtonValue(rbVisualAidYes);
+            model.VisualReqiuredNo = getRadioButtonValue(rbVisualAidRequiredNo);
+            model.Restriction1 = txtAssessmentComment1.Text;
+            model.Restriction2 = txtAssessmentComment1.Text;
+            model.Restriction3 = txtAssessmentComment1.Text;
+            return model;
 
         }
 
@@ -248,7 +297,6 @@ namespace MedicalManagementSoftware
 
             return model;
         }
-
 
 
 
@@ -438,7 +486,7 @@ namespace MedicalManagementSoftware
             model.Lungs = getCheckBoxValue(cbLungs);
             model.Breast = getCheckBoxValue(cbBreast);
             model.Heart = getCheckBoxValue(cbHeart);
-            model.Skin = getCheckBoxValue(cbSkin); 
+            model.Skin = getCheckBoxValue(cbSkin);
             model.VaricoseVenis = getCheckBoxValue(cbVaricoseVenis);
             model.Vascular = getCheckBoxValue(cbVascular);
             model.Abnomen = getCheckBoxValue(cbAbnomen);
@@ -471,6 +519,85 @@ namespace MedicalManagementSoftware
 
 
 
+        private Page6Model prepareThePage6()
+        {
+            Page6Model model = new Page6Model();
+            model.Lipid = getCheckBoxValue(cbLipid);
+            model.LipidNormal = txtLipidNormal.Text;
+            model.LipidAbNormal = txtLipidAbNormal.Text;
+            model.LipidObservation = txtLipidObservation.Text;
+            model.Creatinine = getCheckBoxValue(cbCreatinine);
+            model.CreatinineNormal = txtCreatinineNormal.Text;
+            model.CreatinineAbnormal = txtCreatinineAbnormal.Text;
+            model.CreatinineObservation = txtCreatinineObservation.Text;
+            model.Cholesterol = getCheckBoxValue(cbCholesterol);
+            model.CholesterolNormal = txtCholesterolNormal.Text;
+            model.CholesterolAbnormal = txtCholesterolAbnormal.Text;
+            model.CholesterolObservation = txtCholesterolObservation.Text;
+            model.Triglycerides = getCheckBoxValue(cbTriglycerides);
+            model.TriglyceridesNormal = txtTriglyceridesNormal.Text;
+            model.TriglyceridesAbnormal = txtTriglyceridesAbnormal.Text;
+            model.TriglyceridesObservation = txtTriglyceridesObservation.Text;
+            model.Glucose = getCheckBoxValue(cbGlucose);
+            model.GlucoseNormal = txtGlucoseNormal.Text;
+            model.GlucoseAbNormal = txtGlucoseAbNormal.Text;
+            model.GlucoseObservation = txtGlucoseObservation.Text;
+            model.Nitrogen = getCheckBoxValue(cbNitrogen);
+            model.NitrogenNormal = txtNitrogenNormal.Text;
+            model.NitrogenAbnormal = txtNitrogenAbnormal.Text;
+            model.NitrogenObservation = txtNitrogenObservation.Text;
+            model.RhTyping = getCheckBoxValue(cbRhTyping);
+            model.RhTypingNormal = txtRhTypingNormal.Text;
+            model.RhTypingAbnormal = txtRhTypingAbnormal.Text;
+            model.RhTypingObservation = txtRhTypingObservation.Text;
+            model.Hiv = getCheckBoxValue(cbHiv);
+            model.HivNormal = txtHivNormal.Text;
+            model.HivAbnormal = txtHivAbnormal.Text;
+            model.HivObservation = txtHivObservation.Text;
+            model.Vdrl = getCheckBoxValue(cbVdrl);
+            model.VdrlNormal = txtVdrlNormal.Text;
+            model.VdrlAbnormal = txtVdrlAbnormal.Text;
+            model.VdrlObservation = txtVdrlObservation.Text;
+            model.Gch = getCheckBoxValue(cbGch);
+            model.GchNormal = txtGchNormal.Text;
+            model.GchAbnormal = txtGchAbnormal.Text;
+            model.GchObservation = txtGchObservation.Text;
+            model.GeneralUrien = getCheckBoxValue(cbGeneralUrien);
+            model.GeneralUrineNormal = txtGeneralUrineNormal.Text;
+            model.GeneralUrineAbNormal = txtGeneralUrineAbNormal.Text;
+            model.GeneralUrineObservation = txtGeneralUrineObservation.Text;
+            model.Stool = getCheckBoxValue(cbStool);
+            model.StoolNormal = txtStoolNormal.Text;
+            model.StoolAbNormal = txtStoolAbNormal.Text;
+            model.StoolObservation = txtStoolObservation.Text;
+            model.Drugtest = getCheckBoxValue(cbDrugtest);
+            model.DrugTestNormal = txtDrugTestNormal.Text;
+            model.DrugTestAbNormal = txtDrugTestAbNormal.Text;
+            model.DrugTestObservation = txtDrugTestObservation.Text;
+            model.Alcohol = getCheckBoxValue(cbAlcohol);
+            model.AlcoholNormal = txtAlcoholNormal.Text;
+            model.AlcoholAbNormal = txtAlcoholAbNormal.Text;
+            model.AlcoholObservation = txtAlcoholObservation.Text;
+            model.BreastExamination = getCheckBoxValue(cbBreastExamination);
+            model.BreastExaminationNormal = txtBreastExaminationNormal.Text;
+            model.BreastExaminationAbNormal = txtBreastExaminationAbNormal.Text;
+            model.BreastExaminationObservation = txtBreastExaminationObservation.Text;
+            model.PapTest = getCheckBoxValue(cbPapTest);
+            model.PaptestJNormal = txtPaptestJNormal.Text;
+            model.PapAbnormal = txtPapAbnormal.Text;
+            model.PapObservation = txtPapObservation.Text;
+            model.Psa = getCheckBoxValue(cbPsa);
+            model.PsaNormal = txtPsaNormal.Text;
+            model.PsaAbNormal = txtPsaAbNormal.Text;
+            model.PsaObservation = txtPsaObservation.Text;
+            model.Xray = getCheckBoxValue(cbXray);
+            model.XrayPerformed = txtXrayObservation.Text;
+            model.XrayObservation =
+            model.Ekg = getCheckBoxValue(cbEkg);
+            model.EZGPerformed = txtEZGPerformed.Text;
+            model.EkgObservation = txtEkgObservation.Text;
+            return model;
+        }
         private void FrmPanama_Load(object sender, EventArgs e)
         {
             Availability(tabPage1Overlay, false);
@@ -636,8 +763,16 @@ namespace MedicalManagementSoftware
         {
 
 
-            txtValidUntilDate.Text = "00/00/0000";
-            txtIssuedDate.Text = "00/00/0000";
+            //txtValidUntilDate.Text = "00/00/0000";
+            //txtIssuedDate.Text = "00/00/0000";
+            txtExpirationDay.Text = "00";
+            txtExpirationMonth.Text = "00";
+            txtExpirationYear.Text = "00";
+
+            txtIssuedDay.Text = "00";
+            txtIssuedMonth.Text = "00";
+            txtIssuedYear.Text = "00";
+
             txtUndergoingDate.Text = "00/00/0000";
 
 
@@ -860,8 +995,8 @@ namespace MedicalManagementSoftware
 
 
             rbFitForLookOut.Checked = true;
-            cbWithOutRestrictions.Checked = true;
-            cbVisualAidRequiredNo.Checked = true;
+            rbWithOutRestrictions.Checked = true;
+            rbVisualAidRequiredNo.Checked = true;
 
             txtAssessmentComment1.Text = "";
             txtAssessmentComment2.Text = "";
@@ -890,7 +1025,7 @@ namespace MedicalManagementSoftware
             cbCateringFit.Checked = false;
             cbCateringUnFit.Checked = false;
             cbOtherServiceFit.Checked = false;
-            cbOtherUnFit.Checked = false;
+            OtherServiceNotFit.Checked = false;
 
         }
 
@@ -2372,16 +2507,16 @@ namespace MedicalManagementSoftware
 
 
 
-                cbWithRestrictions.Checked = true;
+                rbWithRestrictions.Checked = true;
                 if (i.WithOutRestrictions.Equals("Yes"))
                 {
-                    cbWithOutRestrictions.Checked = true;
+                    rbWithOutRestrictions.Checked = true;
                 }
 
-                cbWithOutRestrictions.Checked = true;
+                rbWithOutRestrictions.Checked = true;
                 if (i.WithRestrictions.Equals("Yes"))
                 {
-                    cbWithRestrictions.Checked = true;
+                    rbWithRestrictions.Checked = true;
                 }
 
 
@@ -2405,7 +2540,7 @@ namespace MedicalManagementSoftware
                 if (t_catering_srvc_flag_ == "Yes") { this.cbCateringFit.Checked = true; } else if (t_catering_srvc_flag_ == "No") { this.cbCateringUnFit.Checked = true; } else { cbCateringFit.Checked = false; cbCateringUnFit.Checked = false; }
 
                 string t_other_srvc_flag_ = i.OtherServiceFit.ToString();
-                if (t_other_srvc_flag_ == "Yes") { this.cbOtherServiceFit.Checked = true; } else if (t_other_srvc_flag_ == "No") { this.cbOtherUnFit.Checked = true; } else { cbOtherServiceFit.Checked = false; cbOtherUnFit.Checked = false; }
+                if (t_other_srvc_flag_ == "Yes") { this.cbOtherServiceFit.Checked = true; } else if (t_other_srvc_flag_ == "No") { this.OtherServiceNotFit.Checked = true; } else { cbOtherServiceFit.Checked = false; OtherServiceNotFit.Checked = false; }
 
 
 
@@ -2824,11 +2959,27 @@ namespace MedicalManagementSoftware
 
                 newItem();
 
-
                 txtRhType.Text = i.RhTyping;
-                txtValidUntilDate.Text = i.valid_until;
-                txtIssuedDate.Text = i.fitness_date;
+                //txtValidUntilDate.Text = i.valid_until;
+                //txtIssuedDate.Text = i.fitness_date;
                 txtUndergoingDate.Text = i.fitness_date;
+
+                string[] validUntilDate = i.valid_until.ToString().Split('/');
+                txtExpirationDay.Text = validUntilDate[0].ToString();
+                txtExpirationMonth.Text = validUntilDate[1].ToString();
+                txtExpirationYear.Text =  validUntilDate[2].ToString();
+  
+
+
+                string[] issuedDate = i.fitness_date.ToString().Split('/');
+                txtIssuedDay.Text = issuedDate[0].ToString();
+                txtIssuedMonth.Text = issuedDate[1].ToString();
+                txtIssuedYear.Text = issuedDate[2].ToString();
+                
+
+
+
+
 
                 if (i.TypeOfShip != null)
                 {
@@ -2889,8 +3040,8 @@ namespace MedicalManagementSoftware
         }
         private void PanamaResultMainSave(string papin, string uid)
         {
-            //string expiration = string.Concat(expirateDay.Text, "-", expirateMonth.Text, "-", expirateYear.Text);
-            //string issued = string.Concat(issuedDay.Text, "-", issuedMonth.Text, "-", issuedYear.Text);
+            string expiration = string.Concat(txtExpirationDay.Text, "/", txtExpirationMonth.Text, "/", txtExpirationYear.Text);
+            string issued = string.Concat(txtIssuedDay.Text, "/", txtIssuedMonth.Text, "/", txtIssuedYear.Text);
 
             PanamaResultMainModel resultMain = new PanamaResultMainModel();
             resultMain.Save(uid,
@@ -2904,14 +3055,14 @@ namespace MedicalManagementSoftware
                            getCheckBoxValue(cbDeckServiceUnFit),
                            getCheckBoxValue(cbEngineUnFit),
                            getCheckBoxValue(cbCateringUnFit),
-                           getCheckBoxValue(cbOtherUnFit),
-                           getCheckBoxValue(cbWithOutRestrictions),
-                           getCheckBoxValue(cbWithRestrictions),
-                           getCheckBoxValue(cbVisualAidYes),
-                           getCheckBoxValue(cbVisualAidYes),
+                           getCheckBoxValue(OtherServiceNotFit),
+                           getCheckBoxValue(rbWithOutRestrictions),
+                           getCheckBoxValue(rbWithRestrictions),
+                           getCheckBoxValue(rbVisualAidYes),
+                           getCheckBoxValue(rbVisualAidYes),
                             txtAssessmentComment1.Text,
-                            txtValidUntilDate.Text,
-                           txtIssuedDate.Text,
+                           expiration,
+                           issued,
                             txtNumberOfMedicalCertificate.Text,
                             txtPhysicianName.Text,
                             txtAssessmentComment2.Text,
@@ -2971,8 +3122,24 @@ namespace MedicalManagementSoftware
                     txtResultID.Text = "";
                     txtResultID.Text = i.resultid;
 
-                    txtValidUntilDate.Text = i.valid_until.ToString();
-                    txtIssuedDate.Text = i.fitness_date.ToString();
+                    //txtValidUntilDate.Text = i.valid_until.ToString();
+                    //txtIssuedDate.Text = i.fitness_date.ToString();
+
+
+
+                    string[] validUntilDate = i.valid_until.ToString().Split('/');
+                    txtExpirationDay.Text = validUntilDate[0].ToString();
+                    txtExpirationMonth.Text = validUntilDate[1].ToString();
+                    txtExpirationYear.Text = validUntilDate[2].ToString();
+
+
+
+                    string[] issuedDate = i.fitness_date.ToString().Split('/');
+                    txtIssuedDay.Text = issuedDate[0].ToString();
+                    txtIssuedMonth.Text = issuedDate[1].ToString();
+                    txtIssuedYear.Text = issuedDate[2].ToString();
+                
+
 
 
 

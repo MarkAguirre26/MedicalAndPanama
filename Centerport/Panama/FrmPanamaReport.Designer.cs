@@ -199,8 +199,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Viewer1);
             this.Name = "FrmPanamaReport";
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmPanamaReport";
+            this.Text = "Panama Report";
             this.Load += new System.EventHandler(this.FrmPanamaReport_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
