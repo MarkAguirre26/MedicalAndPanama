@@ -8,7 +8,10 @@ namespace MedicalManagementSoftware.Panama
 {
     public class Page6Model
     {
-
+        public string Hemogram { get; set; }
+        public string HemogramNormal { get; set; }
+        public string HemogramAbNormal { get; set; }
+        public string HemogramOservation { get; set; }
         public string Lipid { get; set; }
         public string LipidNormal { get; set; }
         public string LipidAbNormal { get; set; }

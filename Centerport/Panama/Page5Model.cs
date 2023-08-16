@@ -45,10 +45,6 @@ namespace MedicalManagementSoftware.Panama
         public string PhysicalExploration2 { get; set; }
         public string PhysicalExploration3 { get; set; }
         public string PhysicalExploration4 { get; set; }
-        public string Hemogram { get; set; }
-        public string HemogramNormal { get; set; }
-        public string HemogramAbNormal { get; set; }
-        public string HemogramOservation { get; set; }
 
 
     }

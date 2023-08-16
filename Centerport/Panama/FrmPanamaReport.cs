@@ -746,11 +746,7 @@ namespace MedicalManagementSoftware.Report
                 page5.SetParameterValue("PhysicalExploration2", page5Model.PhysicalExploration2);
                 page5.SetParameterValue("PhysicalExploration3", page5Model.PhysicalExploration3);
                 page5.SetParameterValue("PhysicalExploration4", page5Model.PhysicalExploration4);
-                page5.SetParameterValue("Hemogram", page5Model.Hemogram);
-                page5.SetParameterValue("HemogramNormal", page5Model.HemogramNormal);
-                page5.SetParameterValue("HemogramAbNormal", page5Model.HemogramAbNormal);
-                page5.SetParameterValue("HemogramOservation", page5Model.HemogramOservation);
-
+      
 
 
                 //page5.SetDataSource(data);
@@ -773,6 +769,11 @@ namespace MedicalManagementSoftware.Report
                 btn_page7.BackColor = SystemColors.Control;
                 btn_page8.BackColor = SystemColors.Control;
 
+
+                page6.SetParameterValue("Hemogram", page6Model.Hemogram);
+                page6.SetParameterValue("HemogramNormal", page6Model.HemogramNormal);
+                page6.SetParameterValue("HemogramAbNormal", page6Model.HemogramAbNormal);
+                page6.SetParameterValue("HemogramOservation", page6Model.HemogramOservation);
 
                 page6.SetParameterValue("Lipid", page6Model.Lipid);
                 page6.SetParameterValue("LipidNormal", page6Model.LipidNormal);
@@ -890,6 +891,8 @@ namespace MedicalManagementSoftware.Report
                 page7.SetParameterValue("Restriction1", page7Model.Restriction1);
                 page7.SetParameterValue("Restriction2", page7Model.Restriction2);
                 page7.SetParameterValue("Restriction3", page7Model.Restriction3);
+                page7.SetParameterValue("Restriction4", page7Model.Restriction4);
+                page7.SetParameterValue("Restriction5", page7Model.Restriction5);
                 Viewer1.ReportSource = page7;
 
 

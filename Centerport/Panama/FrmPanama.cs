@@ -198,8 +198,10 @@ namespace MedicalManagementSoftware
             model.VisualReqiuredYes = getRadioButtonValue(rbVisualAidYes);
             model.VisualReqiuredNo = getRadioButtonValue(rbVisualAidRequiredNo);
             model.Restriction1 = txtAssessmentComment1.Text;
-            model.Restriction2 = txtAssessmentComment1.Text;
-            model.Restriction3 = txtAssessmentComment1.Text;
+            model.Restriction2 = txtAssessmentComment2.Text;
+            model.Restriction3 = txtAssessmentComment3.Text;
+            model.Restriction4 = txtAssessmentComment4.Text;
+            model.Restriction5 = txtAssessmentComment5.Text;
             return model;
 
         }
@@ -510,15 +512,7 @@ namespace MedicalManagementSoftware
             model.PhysicalExploration2 = txtPhysicalExploration2.Text;
             model.PhysicalExploration3 = txtPhysicalExploration3.Text;
             model.PhysicalExploration4 = txtPhysicalExploration4.Text;
-            model.Hemogram = "";
-            if (cbHemogram.Checked)
-            {
-                model.Hemogram = "Yes";
-            }
-
-            model.HemogramNormal = txtHemogramNormal.Text;
-            model.HemogramAbNormal = txtHemogramAbNormal.Text;
-            model.HemogramOservation = txtHemogramOservation.Text;
+   
 
             return model;
         }
@@ -529,6 +523,18 @@ namespace MedicalManagementSoftware
         private Page6Model prepareThePage6()
         {
             Page6Model model = new Page6Model();
+
+            model.Hemogram = "";
+            if (cbHemogram.Checked)
+            {
+                model.Hemogram = "Yes";
+            }
+
+            model.HemogramNormal = txtHemogramNormal.Text;
+            model.HemogramAbNormal = txtHemogramAbNormal.Text;
+            model.HemogramOservation = txtHemogramOservation.Text;
+
+
             model.Lipid = getCheckBoxValue(cbLipid);
             model.LipidNormal = txtLipidNormal.Text;
             model.LipidAbNormal = txtLipidAbNormal.Text;

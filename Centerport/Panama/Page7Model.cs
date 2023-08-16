@@ -35,6 +35,7 @@ namespace MedicalManagementSoftware.Panama
         public string Restriction2 { get; set; }
         public string Restriction3 { get; set; }
 
-
+        public string Restriction4 { get; set; }
+        public string Restriction5 { get; set; }
     }
 }
