@@ -9,6 +9,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -470,6 +471,10 @@ namespace MedicalManagementSoftware.Report
 
         private void PageSelection()
         {
+            lblLoading.Visible = true;
+            lblLoading.BringToFront();
+            Thread.Sleep(300);
+            lblLoading.Visible = false;
             if (pageIndex == 1)
             {
 
@@ -996,6 +1001,51 @@ namespace MedicalManagementSoftware.Report
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             //data = getData();
+        }
+
+        private void btnFirstPage_Click(object sender, EventArgs e)
+        {
+           
+            if (pageIndex != 1)
+            {
+                pageIndex = 1;
+                PageSelection();
+            }
+           
+        }
+
+        private void btnLastPage_Click(object sender, EventArgs e)
+        {
+          
+
+            if (pageIndex != 8)
+            {
+                pageIndex = 8;
+                PageSelection();
+            }
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            
+
+            if (pageIndex != 1)
+            {
+                pageIndex -= 1;
+                PageSelection();
+            }
+          
+        }
+
+        private void btnForward_Click(object sender, EventArgs e)
+        {
+            if (pageIndex != 8)
+            {
+                pageIndex += 1;
+                 PageSelection();
+            }
+           
         }
     }
 }
