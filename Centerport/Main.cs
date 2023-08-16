@@ -2760,6 +2760,11 @@ namespace MedicalManagementSoftware
 
         private void tsPanamaSave_Click(object sender, EventArgs e)
         {
+            savePanama(); 
+        }
+
+        public void savePanama()
+        {
             if (this.ActiveMdiChild is FrmPanama)
             {
                 Cursor.Current = Cursors.WaitCursor;

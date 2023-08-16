@@ -151,6 +151,18 @@ namespace MedicalManagementSoftware
         {
             SelectItem();
         }
+
+        private void txt_search_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Down)
+            { dg_result.Focus(); }
+        }
+
+        private void FrmSearchPanama_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            { SelectItem(); }
+        }
      
 
     }

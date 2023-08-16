@@ -54,12 +54,12 @@ namespace MedicalManagementSoftware
 
         public void ClearAll()
         {
-            newItem();
+            clearFields();
         }
         public void Save()
         {
 
-            savePanamaRecord(true);
+            savePanamaRecord();
 
 
             //fmain.tsPanamaNew.Enabled = true;
@@ -87,21 +87,26 @@ namespace MedicalManagementSoftware
         public void Edit()
         {
             //fmain.tsPanamaNew.Enabled = false;
-            fmain.tsPanamaEdit.Enabled = false;
-            fmain.tsPanamaDelete.Enabled = false;
-            fmain.tsPanamaSave.Enabled = true;
-            fmain.tsPanamaCancel.Enabled = true;
-            fmain.tsPanamaPrint.Enabled = false;
-            fmain.tsPanamaSearch.Enabled = false;
 
-            Availability(tabPage1Overlay, true);
-            Availability(tabPage2overlay, true);
-            Availability(tabPage3overlay, true);
-            Availability(tabPage4overlay, true);
-            Availability(tabPage5overlay, true);
-            Availability(tabPage6overlay, true);
-            Availability(tabPage7overlay, true);
-            Availability(tabPage8overlay, true);
+            if (txtPapin.Text != "")
+            {
+                fmain.tsPanamaEdit.Enabled = false;
+                fmain.tsPanamaDelete.Enabled = false;
+                fmain.tsPanamaSave.Enabled = true;
+                fmain.tsPanamaCancel.Enabled = true;
+                fmain.tsPanamaPrint.Enabled = false;
+                fmain.tsPanamaSearch.Enabled = false;
+
+                Availability(tabPage1Overlay, true);
+                Availability(tabPage2overlay, true);
+                Availability(tabPage3overlay, true);
+                Availability(tabPage4overlay, true);
+                Availability(tabPage5overlay, true);
+                Availability(tabPage6overlay, true);
+                Availability(tabPage7overlay, true);
+                Availability(tabPage8overlay, true);
+            }
+           
         }
 
         public void Delete()
@@ -759,7 +764,7 @@ namespace MedicalManagementSoftware
         //}
 
 
-        void newItem()
+        void clearFields()
         {
 
 
@@ -1469,7 +1474,7 @@ namespace MedicalManagementSoftware
         //    }
         //}
 
-        public void savePanamaRecord(bool isfromBtnSave)
+        public void savePanamaRecord()
         {
             string uID = UID.Generate();
 
@@ -2047,14 +2052,36 @@ namespace MedicalManagementSoftware
         //}
         private void FormPanama_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Modifiers == Keys.Control && e.KeyCode == Keys.S)
-            {
-                savePanamaRecord(true);
-            }
-            else if (e.Modifiers == Keys.Control && e.KeyCode == Keys.F)
+           if (e.KeyCode == Keys.Add && e.Modifiers == Keys.Control)
             {
                 OpenSearchList();
             }
+            else if (e.KeyCode == Keys.P && e.Modifiers == Keys.Control)
+            {
+                Print();
+            }
+            else if (e.KeyCode == Keys.F && e.Modifiers == Keys.Control)
+            {
+
+                fmain.SearchPanama();
+
+            }
+            else if (e.KeyCode == Keys.S && e.Modifiers == Keys.Control)
+            {
+
+                fmain.savePanama();
+
+            }
+            else if (e.KeyCode == Keys.F4)
+            {
+                
+                    Edit();
+
+            }
+           
+
+
+
 
 
 
@@ -2482,6 +2509,9 @@ namespace MedicalManagementSoftware
         public void searchPanamaRecord(string papin)
         {
             txtPapin.Text = papin;
+
+            clearFields();
+
 
             searchPanamaPatient();
             searchPanamaExamineePersonalDeclaration();
@@ -2957,25 +2987,48 @@ namespace MedicalManagementSoftware
                 txtRoutine.Text = i.EmergencyDuties;
 
 
-                newItem();
+                clearFields();
 
                 txtRhType.Text = i.RhTyping;
-                //txtValidUntilDate.Text = i.valid_until;
-                //txtIssuedDate.Text = i.fitness_date;
+
                 txtUndergoingDate.Text = i.fitness_date;
 
-                string[] validUntilDate = i.valid_until.ToString().Split('/');
-                txtExpirationDay.Text = validUntilDate[0].ToString();
-                txtExpirationMonth.Text = validUntilDate[1].ToString();
-                txtExpirationYear.Text =  validUntilDate[2].ToString();
-  
+                try
+                {
+                    string[] validUntilDate = i.valid_until.ToString().Split('/');
+                    txtExpirationDay.Text = validUntilDate[0].ToString();
+                    txtExpirationMonth.Text = validUntilDate[1].ToString();
+                    txtExpirationYear.Text = validUntilDate[2].ToString();
+
+                }
+                catch (Exception)
+                {
+
+                    txtExpirationDay.Text = "00";
+                    txtExpirationMonth.Text = "00";
+                    txtExpirationYear.Text = "0000";
+
+                }
 
 
-                string[] issuedDate = i.fitness_date.ToString().Split('/');
-                txtIssuedDay.Text = issuedDate[0].ToString();
-                txtIssuedMonth.Text = issuedDate[1].ToString();
-                txtIssuedYear.Text = issuedDate[2].ToString();
-                
+                try
+                {
+                    string[] issuedDate = i.fitness_date.ToString().Split('/');
+                    txtIssuedDay.Text = issuedDate[0].ToString();
+                    txtIssuedMonth.Text = issuedDate[1].ToString();
+                    txtIssuedYear.Text = issuedDate[2].ToString();
+                }
+                catch (Exception)
+                {
+
+
+                    txtIssuedDay.Text = "00";
+                    txtIssuedMonth.Text = "00";
+                    txtIssuedYear.Text = "0000";
+                }
+
+
+
 
 
 
@@ -3138,7 +3191,7 @@ namespace MedicalManagementSoftware
                     txtIssuedDay.Text = issuedDate[0].ToString();
                     txtIssuedMonth.Text = issuedDate[1].ToString();
                     txtIssuedYear.Text = issuedDate[2].ToString();
-                
+
 
 
 
@@ -3273,7 +3326,7 @@ namespace MedicalManagementSoftware
         {
             if (rbTypeOfShipOther.Checked == true)
             {
-                txtTypeShipOther.Text = "BLUCK";
+                txtTypeShipOther.Text = "BULK";
             }
             else
             {
