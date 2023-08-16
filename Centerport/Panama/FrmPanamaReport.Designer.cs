@@ -67,9 +67,9 @@
             // 
             this.btn_page8.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page8.Location = new System.Drawing.Point(538, 660);
+            this.btn_page8.Location = new System.Drawing.Point(539, 660);
             this.btn_page8.Name = "btn_page8";
-            this.btn_page8.Size = new System.Drawing.Size(29, 23);
+            this.btn_page8.Size = new System.Drawing.Size(29, 30);
             this.btn_page8.TabIndex = 37;
             this.btn_page8.Text = "8";
             this.btn_page8.UseVisualStyleBackColor = true;
@@ -79,9 +79,9 @@
             // 
             this.btn_page7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_page7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_page7.Location = new System.Drawing.Point(509, 660);
+            this.btn_page7.Location = new System.Drawing.Point(510, 660);
             this.btn_page7.Name = "btn_page7";
-            this.btn_page7.Size = new System.Drawing.Size(29, 23);
+            this.btn_page7.Size = new System.Drawing.Size(29, 30);
             this.btn_page7.TabIndex = 36;
             this.btn_page7.Text = "7";
             this.btn_page7.UseVisualStyleBackColor = true;
@@ -93,7 +93,7 @@
             this.btn_page6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_page6.Location = new System.Drawing.Point(481, 660);
             this.btn_page6.Name = "btn_page6";
-            this.btn_page6.Size = new System.Drawing.Size(29, 23);
+            this.btn_page6.Size = new System.Drawing.Size(29, 30);
             this.btn_page6.TabIndex = 35;
             this.btn_page6.Text = "6";
             this.btn_page6.UseVisualStyleBackColor = true;
@@ -105,7 +105,7 @@
             this.btn_page2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_page2.Location = new System.Drawing.Point(365, 660);
             this.btn_page2.Name = "btn_page2";
-            this.btn_page2.Size = new System.Drawing.Size(29, 23);
+            this.btn_page2.Size = new System.Drawing.Size(29, 30);
             this.btn_page2.TabIndex = 34;
             this.btn_page2.Text = "2";
             this.btn_page2.UseVisualStyleBackColor = true;
@@ -117,7 +117,7 @@
             this.btn_page3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_page3.Location = new System.Drawing.Point(394, 660);
             this.btn_page3.Name = "btn_page3";
-            this.btn_page3.Size = new System.Drawing.Size(29, 23);
+            this.btn_page3.Size = new System.Drawing.Size(29, 30);
             this.btn_page3.TabIndex = 33;
             this.btn_page3.Text = "3";
             this.btn_page3.UseVisualStyleBackColor = true;
@@ -129,7 +129,7 @@
             this.btn_page4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_page4.Location = new System.Drawing.Point(423, 660);
             this.btn_page4.Name = "btn_page4";
-            this.btn_page4.Size = new System.Drawing.Size(29, 23);
+            this.btn_page4.Size = new System.Drawing.Size(29, 30);
             this.btn_page4.TabIndex = 32;
             this.btn_page4.Text = "4";
             this.btn_page4.UseVisualStyleBackColor = true;
@@ -141,7 +141,7 @@
             this.btn_page5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_page5.Location = new System.Drawing.Point(452, 660);
             this.btn_page5.Name = "btn_page5";
-            this.btn_page5.Size = new System.Drawing.Size(29, 23);
+            this.btn_page5.Size = new System.Drawing.Size(29, 30);
             this.btn_page5.TabIndex = 31;
             this.btn_page5.Text = "5";
             this.btn_page5.UseVisualStyleBackColor = true;
@@ -153,7 +153,7 @@
             this.btn_page1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_page1.Location = new System.Drawing.Point(336, 660);
             this.btn_page1.Name = "btn_page1";
-            this.btn_page1.Size = new System.Drawing.Size(29, 23);
+            this.btn_page1.Size = new System.Drawing.Size(29, 30);
             this.btn_page1.TabIndex = 30;
             this.btn_page1.Text = "1";
             this.btn_page1.UseVisualStyleBackColor = true;
@@ -180,9 +180,9 @@
             // 
             this.btnFirstPage.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnFirstPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFirstPage.Location = new System.Drawing.Point(275, 660);
+            this.btnFirstPage.Location = new System.Drawing.Point(276, 660);
             this.btnFirstPage.Name = "btnFirstPage";
-            this.btnFirstPage.Size = new System.Drawing.Size(29, 23);
+            this.btnFirstPage.Size = new System.Drawing.Size(29, 30);
             this.btnFirstPage.TabIndex = 0;
             this.btnFirstPage.Text = "|<";
             this.btnFirstPage.UseVisualStyleBackColor = true;
@@ -192,9 +192,9 @@
             // 
             this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.Location = new System.Drawing.Point(304, 660);
+            this.btnBack.Location = new System.Drawing.Point(305, 660);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(29, 23);
+            this.btnBack.Size = new System.Drawing.Size(29, 30);
             this.btnBack.TabIndex = 1;
             this.btnBack.Text = "<";
             this.btnBack.UseVisualStyleBackColor = true;
@@ -206,7 +206,7 @@
             this.btnForward.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnForward.Location = new System.Drawing.Point(570, 660);
             this.btnForward.Name = "btnForward";
-            this.btnForward.Size = new System.Drawing.Size(29, 23);
+            this.btnForward.Size = new System.Drawing.Size(29, 30);
             this.btnForward.TabIndex = 2;
             this.btnForward.Text = ">";
             this.btnForward.UseVisualStyleBackColor = true;
@@ -218,7 +218,7 @@
             this.btnLastPage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLastPage.Location = new System.Drawing.Point(599, 660);
             this.btnLastPage.Name = "btnLastPage";
-            this.btnLastPage.Size = new System.Drawing.Size(29, 23);
+            this.btnLastPage.Size = new System.Drawing.Size(29, 30);
             this.btnLastPage.TabIndex = 3;
             this.btnLastPage.Text = ">|";
             this.btnLastPage.UseVisualStyleBackColor = true;

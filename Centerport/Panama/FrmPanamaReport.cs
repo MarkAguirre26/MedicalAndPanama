@@ -559,6 +559,7 @@ namespace MedicalManagementSoftware.Report
 
 
                 page2.SetParameterValue("Epilipsy", page2Model.Epilipsy);
+                page2.SetParameterValue("Allergies", page2Model.Epilipsy);
                 page2.SetParameterValue("SickleCell", page2Model.SickleCell);
                 page2.SetParameterValue("Herinas", page2Model.Herinas);
                 page2.SetParameterValue("GenitalDisorders", page2Model.GenitalDisorders);
@@ -590,6 +591,7 @@ namespace MedicalManagementSoftware.Report
                 page2.SetParameterValue("AlternativeSuplimentComment3", page2Model.AlternativeSuplimentComment3);
                 page2.SetParameterValue("AlternativeSuplimentComment4", page2Model.AlternativeSuplimentComment4);
                 page2.SetParameterValue("AlternativeSuplimentComment5", page2Model.AlternativeSuplimentComment5);
+                page2.SetParameterValue("AlternativeSuplimentComment6", page2Model.AlternativeSuplimentComment5);
 
 
 

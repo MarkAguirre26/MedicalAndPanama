@@ -9,6 +9,7 @@ namespace MedicalManagementSoftware.Panama
     public class Page2Model
     {
         public string Epilipsy { get; set; }
+        public string Allergies { get; set; }
         public string SickleCell { get; set; }
         public string Herinas { get; set; }
         public string GenitalDisorders { get; set; }
@@ -39,6 +40,7 @@ namespace MedicalManagementSoftware.Panama
         public string AlternativeSuplimentComment3 { get; set; }
         public string AlternativeSuplimentComment4 { get; set; }
         public string AlternativeSuplimentComment5 { get; set; }
+        public string AlternativeSuplimentComment6 { get; set; }
 
 
 

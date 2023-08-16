@@ -298,7 +298,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Allergies {
+        public CrystalDecisions.Shared.IParameterField Parameter_DoyouSmoke {
             get {
                 return this.DataDefinition.ParameterFields[26];
             }
@@ -306,7 +306,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_DoyouSmoke {
+        public CrystalDecisions.Shared.IParameterField Parameter_Surgeries {
             get {
                 return this.DataDefinition.ParameterFields[27];
             }
@@ -314,7 +314,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Surgeries {
+        public CrystalDecisions.Shared.IParameterField Parameter_Infectious {
             get {
                 return this.DataDefinition.ParameterFields[28];
             }
@@ -322,7 +322,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Infectious {
+        public CrystalDecisions.Shared.IParameterField Parameter_DizzinessFainting {
             get {
                 return this.DataDefinition.ParameterFields[29];
             }
@@ -330,7 +330,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_DizzinessFainting {
+        public CrystalDecisions.Shared.IParameterField Parameter_Lossofconsciousness {
             get {
                 return this.DataDefinition.ParameterFields[30];
             }
@@ -338,7 +338,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Lossofconsciousness {
+        public CrystalDecisions.Shared.IParameterField Parameter_PsychiatricProblem {
             get {
                 return this.DataDefinition.ParameterFields[31];
             }
@@ -346,7 +346,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_PsychiatricProblem {
+        public CrystalDecisions.Shared.IParameterField Parameter_Depression {
             get {
                 return this.DataDefinition.ParameterFields[32];
             }
@@ -354,7 +354,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Depression {
+        public CrystalDecisions.Shared.IParameterField Parameter_Attemptedsuicide {
             get {
                 return this.DataDefinition.ParameterFields[33];
             }
@@ -362,7 +362,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Attemptedsuicide {
+        public CrystalDecisions.Shared.IParameterField Parameter_Lossofmemory {
             get {
                 return this.DataDefinition.ParameterFields[34];
             }
@@ -370,7 +370,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Lossofmemory {
+        public CrystalDecisions.Shared.IParameterField Parameter_BalanceProblems {
             get {
                 return this.DataDefinition.ParameterFields[35];
             }
@@ -378,7 +378,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_BalanceProblems {
+        public CrystalDecisions.Shared.IParameterField Parameter_SevereHeadAches {
             get {
                 return this.DataDefinition.ParameterFields[36];
             }
@@ -386,7 +386,7 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_SevereHeadAches {
+        public CrystalDecisions.Shared.IParameterField Parameter_Vasculardisease {
             get {
                 return this.DataDefinition.ParameterFields[37];
             }
@@ -394,17 +394,9 @@ namespace MedicalManagementSoftware.Panama {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Vasculardisease {
-            get {
-                return this.DataDefinition.ParameterFields[38];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
         public CrystalDecisions.Shared.IParameterField Parameter_RestrictedMobility {
             get {
-                return this.DataDefinition.ParameterFields[39];
+                return this.DataDefinition.ParameterFields[38];
             }
         }
     }

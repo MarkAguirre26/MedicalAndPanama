@@ -311,6 +311,7 @@ namespace MedicalManagementSoftware
 
             model.Epilipsy = getCheckBoxValue(cbEpilipsyYes);
             model.SickleCell = getCheckBoxValue(cbSickleCellYes);
+            model.Allergies = getCheckBoxValue(cbAllergiesYes);
             model.Herinas = getCheckBoxValue(cbHerinasYes);
             model.GenitalDisorders = getCheckBoxValue(cbGenitalDisordersYes);
             model.Pregnancy = getCheckBoxValue(cbPregnancyYes);
@@ -335,6 +336,7 @@ namespace MedicalManagementSoftware
             model.AlternativeSuplimentComment3 = txtAlternativeComment3.Text;
             model.AlternativeSuplimentComment4 = txtAlternativeComment4.Text;
             model.AlternativeSuplimentComment5 = txtAlternativeComment5.Text;
+            model.AlternativeSuplimentComment6 = txtAlternativeComment6.Text;
             model.Pregnancy = getCheckBoxValue(cbPregnancyYes);
             model.Comment1 = txtExamineeComment1.Text;
             model.Comment2 = txtExamineeComment2.Text;
